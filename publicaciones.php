@@ -6,9 +6,7 @@ if ($mysqli->connect_errno) {
     printf("Error en la conexion: %s\n", $mysqli->connect_error);
     exit();
 }
-
-$resultado = $mysqli->query("SELECT DISTINCT id_pub,co_pub,co_pub,id_usu,fe_pub from pub,seg where id_usu=".$_SESSION['id_usu']." or id_usu in (select id_us2 from seg where id_us1=".$_SESSION['id_usu'].")");
-
+$resultado = $mysqli->query("SELECT DISTINCT id_pub,co_pub,co_pub,id_usu,fe_pub from pub,seg where id_usu=".$_SESSION['id_usu']." or id_usu in (select id_us2 from seg where id_us1=".$_SESSION['id_usu'].") order by fe_pub desc");
 $numeroRegistros = $resultado->num_rows;
 if ($numeroRegistros) {
     while ($fila = $resultado->fetch_assoc()) {
@@ -22,8 +20,8 @@ if ($numeroRegistros) {
     }
 }
 else{echo 'No hay publicaciones';}
-$resultado->free();
-// $mysqli->close();
+// $resultado->free();
+//  $mysqli->close();
 ?>
 <!-- select a.no_usu, a.co_usu, b.id_us1,c.co_pub from usu a 
 inner join seg b on a.id_usu = b.id_us1 

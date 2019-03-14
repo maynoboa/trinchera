@@ -104,6 +104,7 @@ $(document).ready(function () {
 	});
 });
 
+
 $(document).ready(function () {
 	$('body').on('click', '.on', function() {
 

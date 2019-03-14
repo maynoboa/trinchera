@@ -9,17 +9,7 @@ if ($mysqli->connect_errno) {
 }
 $mysqli->query("INSERT INTO pub (co_pub, id_usu) VALUES ('".$texto1."',".$_SESSION['id_usu'].")");
 
-$resultado = $mysqli->query("SELECT DISTINCT id_pub,co_pub,co_pub,id_usu from pub,seg where id_usu=".$_SESSION['id_usu']." or id_usu in (select id_us2 from seg where id_us1=".$_SESSION['id_usu'].")");
-$numeroRegistros = $resultado->num_rows;
-if ($numeroRegistros) {
-    while ($fila = $resultado->fetch_assoc()) {
-        echo "<div id='".$fila['id_pub']."' class='contenidoConcreto'>".$fila['co_pub']."</div>";
-        // echo "<div id='".$fila['id_usu']."' class='usu1 bor'><div class='circulo'><img src='".$fila['img']."' class='imagen'></div>".$fila['no_usu']."</div>";
-
-    }
-}
-else{echo 'No hay publicaciones';}
-
+require 'publicaciones.php';
 $resultado->free();
-$mysqli->close();
+ $mysqli->close();
 ?>
