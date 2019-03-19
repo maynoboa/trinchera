@@ -20,19 +20,6 @@ if ($numeroRegistros) {
     }
 }
 else{echo 'No hay publicaciones';}
-//  $resultado->free();
-//   $mysqli->close();
+ $resultado->free();
+  $mysqli->close();
 ?>
-<!-- select a.no_usu, a.co_usu, b.id_us1,c.co_pub from usu a 
-inner join seg b on a.id_usu = b.id_us1 
-inner join pub c on b.id_us1=c.id_pub
-where a.id_usu=3 -->
-
-<!-- select a.id_usu,a.no_usu, a.co_usu, b.id_us1,c.co_pub from usu a 
-inner join seg b on a.id_usu = b.id_us1 
-inner join pub c on b.id_us1=c.id_pub
-where a.id_usu=3 in (select b.id_us2 from usu a inner join seg b on a.id_usu = b.id_us1 where a.id_usu=3) -->
-
-<!-- select c.id_pub,c.co_pub,c.id_usu,c.fe_pub,b.id_us1, b.id_us2 from pub c 
-inner join seg b on b.id_us1=c.id_usu 
-where b.id_us1=3 or b.id_us1 in (select id_us2 from seg where id_us1=3) -->

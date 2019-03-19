@@ -104,6 +104,19 @@ $(document).ready(function () {
 	});
 });
 
+$(document).ready(function () {
+	$("#botonpub1").click(function (event) {
+
+    	$.ajax({
+        		type: "POST",
+        		url: "actualizar.php"       		
+    	}).done(function (msg) {
+        		$(".contenidoPublicacion").html(msg);
+        		// LIMPIEZA DE CONTROLES
+        		// $("#texto1").val("");
+    	});
+	});
+});
 
 $(document).ready(function () {
 	$('body').on('click', '.on', function() {

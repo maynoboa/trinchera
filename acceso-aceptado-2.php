@@ -49,7 +49,7 @@
                 <div id="queSisigo"><?php require 'queSisigo.php'; ?></div> 
             </div>
             <div class="down">
-            <div class="saludo"><img src="img/logo.png" class="logo" alt=""> </div>
+            <div class="saludo logo1"><img src="img/logo.png" class="logo logo2" alt=""> </div>
             </div>
 
 
