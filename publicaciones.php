@@ -6,7 +6,7 @@ if ($mysqli->connect_errno) {
     printf("Error en la conexion: %s\n", $mysqli->connect_error);
     exit();
 }
-$resultado = $mysqli->query("SELECT DISTINCT id_pub,co_pub,co_pub,id_usu,fe_pub from pub,seg where id_usu=".$_SESSION['id_usu']." or id_usu in (select id_us2 from seg where id_us1=".$_SESSION['id_usu'].") order by fe_pub desc");
+$resultado = $mysqli->query("SELECT DISTINCT id_pub,co_pub,co_pub,id_usu,fe_pub,img_pub from pub,seg where id_usu=".$_SESSION['id_usu']." or id_usu in (select id_us2 from seg where id_us1=".$_SESSION['id_usu'].") order by fe_pub desc");
 $numeroRegistros = $resultado->num_rows;
 if ($numeroRegistros) {
     while ($fila = $resultado->fetch_assoc()) {
@@ -15,7 +15,7 @@ if ($numeroRegistros) {
             $nombre=$fila2['no_usu'];
             $img=$fila2['img'];
         }
-        echo "<div id='".$fila['id_pub']."' class='contenidoConcreto'><div class='nompub'><img src=" .$img." class='usu1 ber'><div class='maque'>".$nombre."</div></div><div class='comen'>".$fila['co_pub']."<div class='size'>publicado:".$fila['fe_pub']."</div></div></div>";
+        echo "<div id='".$fila['id_pub']."' class='contenidoConcreto'><div class='nompub'><img src=" .$img." class='usu1 ber'><div class='maque'>".$nombre."</div></div><div class='comen'>".$fila['co_pub']."<div class='size'>publicado:".$fila['fe_pub']."</div><img src=".$fila['img_pub']." class='imgpub'></div></div>";
 
     }
 }

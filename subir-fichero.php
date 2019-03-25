@@ -12,13 +12,7 @@ if (move_uploaded_file($_FILES['file1']['tmp_name'], $archivo)){
 echo "Archivo subido correctamente.\n";
 $mysqli->query("UPDATE usu SET img='.$archivo.' WHERE id_usu=".$_SESSION['id_usu']);
 
-$resultado = $mysqli->query("SELECT id_usu, no_usu, es_usu,img from usu where ni_usu=3 and es_usu=2");
-$numeroRegistros = $resultado->num_rows;
-if ($numeroRegistros) {
-    while ($fila = $resultado->fetch_assoc()) {
-        echo "<div id='".$fila['id_usu']."' class='on bor'><div class='circulo'><img src='".$fila['img']."' class='imagen'></div>".$fila['no_usu']."</div>";
-    }
-}
+
 /* INICIO - Captura de los datos extras enviados junto con la imagen */
 /* echo $_POST['dato1']; */
 /* FIN - Captura de los datos extras enviados junto con la imagen */

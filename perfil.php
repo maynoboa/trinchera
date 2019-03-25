@@ -22,8 +22,7 @@
                     <a href="index.php">Cerrar Sesion</a></div>                   
                     </div>
             <div id="columnaIzq">   
-                 <h1>perfil</h1>
-                 
+                               
                 <!-- <h4 class="puedesSeguir">Puedes seguir</h4> -->
                 <input type="button" class="botonpub botonseguir" value="Puedes seguir" >
                
@@ -31,6 +30,7 @@
             </div>
             <div id="columnaCen">
             <div>
+            <h1>perfil</h1>
             <h4>cambiar foto de perfil</h4>
             <form enctype="multipart/form-data" method="post" name="form1" >
                     <input type="file" name="file1" required />
