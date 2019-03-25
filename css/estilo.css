@@ -199,6 +199,7 @@ a:link {
 }
 .fotoper{
     width: 100%;   
+    border-radius: 39%;
 }
 .cuadro{
     width: 7%;
@@ -243,6 +244,7 @@ a:link {
     width: 60px;
     height: 60px;
     float: left;
+    border-radius: 50%;
 }
 .comen{
 
@@ -264,4 +266,5 @@ border: 1px solid black;
     }
     .imgpub{
         width: 100%;
+       
     }
