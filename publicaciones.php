@@ -15,8 +15,35 @@ if ($numeroRegistros) {
             $nombre=$fila2['no_usu'];
             $img=$fila2['img'];
         }
-        echo "<div id='".$fila['id_pub']."' class='contenidoConcreto'><div class='nompub'><img src=" .$img." class='usu1 ber'><div class='maque'>".$nombre."</div></div><div class='comen'>".$fila['co_pub']."<div class='size'>publicado:".$fila['fe_pub']."</div><img src=".$fila['img_pub']." class='imgpub'></div></div>";
-
+        if($fila['img_pub']==true){
+            echo "
+            <div id='".$fila['id_pub']."' class='contenidoConcreto'>
+                <div class='nompub'>
+                    <img src=" .$img." class='usu1 ber'>
+                    <div class='maque'>".$nombre."</div>
+                </div>
+                <div class='comen'>".$fila['co_pub']."
+                    <div class='size'>publicado:".$fila['fe_pub']."
+                    </div>
+                    <img src=".$fila['img_pub']." class='imgpub'>
+                </div>
+            </div>";
+        }
+        else{
+            echo "
+            <div id='".$fila['id_pub']."' class='contenidoConcreto'>
+                <div class='nompub'>
+                    <img src=" .$img." class='usu1 ber'>
+                    <div class='maque'>".$nombre."</div>
+                </div>
+                <div class='comen'>".$fila['co_pub']."
+                    <div class='size'>publicado:".$fila['fe_pub']."
+                    </div>
+                   
+                </div>
+            </div>";
+        }
+        
     }
 }
 else{echo 'No hay publicaciones';}
