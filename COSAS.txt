@@ -1,0 +1,3 @@
+https://www.macadia.es/blog/sistema-de-votacion-me-gusta-o-no-me-gusta-con-php-jquery-y-ajax/203
+https://www.baulphp.com/sistema-de-comentarios-php-me-gusta-y-no-me-gusta/
+https://www.iguannaweb.com/2015/01/05/sistema-de-likes-tipo-facebook-gratis.html
