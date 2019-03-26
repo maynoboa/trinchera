@@ -32,8 +32,7 @@
             <div>
             <h1>perfil</h1>
             <h2>prueba nuevo</h2>
-            <h2>MAYKOL, EL PRUEBAS</h2>
-            <h4>cambiar foto de perfil</h4>
+            <h4>cambiar foto de perfil (Obligatorio)</h4>
             <form enctype="multipart/form-data" method="post" name="form1" >
                     <input type="file" name="file1" required />
                     <input type="submit" value="Enviar" />
