@@ -15,4 +15,4 @@ else{echo 'No sigues a nadie';}
 $resultado->free();
 $mysqli->close();
 ?>
-
+<!--SELECT COUNT(id_usu) FROM usu,seg WHERE id_usu= id_us2 AND id_us1 =3-->
