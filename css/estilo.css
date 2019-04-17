@@ -312,7 +312,11 @@ border: 1px solid black;
 /*REGISTRO*/
 
 body{
-    background: url("../img/fondo3.jpg")
+    background: url("../img/fondo3.jpg");
+    background-size: cover;
+}
+#resultado{
+    color: black;
 }
 a,
 [type="submit"] {
@@ -327,7 +331,7 @@ a,
   margin-right: auto;
   margin-left: auto;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   overflow: hidden;
   display: flex;
   align-items: center;
