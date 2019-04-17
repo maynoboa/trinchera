@@ -143,7 +143,9 @@ $(document).ready(function () {
            $.ajax({
                type: "POST",
                url: "usuario-a-desbloquear.php",
-               data: { id_us2: $(this).attr("id") }
+               data: { 
+                   id_us2: $(this).attr("id") 
+                }
              }).done(function( msg ) {
                $("#queNosigo").html( msg );
    
@@ -158,4 +160,19 @@ $(document).ready(function () {
        });
    });
    
+  //-----------------like
   
+$(document).ready(function () {
+	$("#like").click(function (event) {
+
+    	$.ajax({
+        		type: "POST",
+        		url: "like.php",
+        		// data: {
+                //     texto1: $("#texto1").val()               
+                // }
+    	}).done(function (msg) {
+        	
+    	});
+	});
+});

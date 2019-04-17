@@ -41,6 +41,8 @@ if ($numeroRegistros) {
                     </div>
                    
                 </div>
+                <div id='like'>like
+                </div>
             </div>";
         }
         
