@@ -5,7 +5,12 @@
         <title>Autenticación Multinivel</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
-        <link href="signin.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     </head>
     <body>
         <?php
@@ -18,13 +23,40 @@
         /* DESTRUCCIÓN DE LA SESIÓN */
         session_destroy();
         ?>
+
+<div class="signup__container">
+  <div class="container__child signup__thumbnail">
+    <div class="thumbnail__logo">
+      <h1 class="logo__text">La trinchera del Meme</h1>
+    </div>
+    <div class="thumbnail__content text-center">
+      <h1 class="encabezado-primario">Bienvenido a la Trinchera del Meme.</h1>
+      <h2 class="encabezado-secundario">¿Quieres hecharte unas risas?. Esta es tu página.</h2>
+      <h2 class="encabezado-secundario">Inicia Sesión.</h2>
+    </div>
+    <div class="redes">
+      <ul class="list-inline m-b-0 text-center">
+        <li><a href="" target="_blank"><i class="fa fa-globe"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-behance"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="signup__overlay"></div>
+  </div>
        
-           <div >
-            <form id="f1" class="formu form-signin" >
+           <div class="container__child signup__form">
+            <form>
                 <div id="resultado" style="margin: 29px;">&nbsp;</div>
-                <div><input type="text" name="usuario" class="form-control pad" id="usuario" placeholder="Usuario"></div>
-                <div><input type="password" name="clave"  class="form-control pad" id="clave" placeholder="Clave"></div>
-                <div><input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1"></div>
+                <div class="division"><input type="text" name="usuario" class="form-control pad" id="usuario" placeholder="Usuario"></div>
+                <div class="division"><input type="password" name="clave"  class="form-control pad" id="clave" placeholder="Clave"></div>
+                <div class="m-t-lg">
+                <ul class="list-inline">
+                    <li>
+                        <input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1">
+                        </li>
+                </ul>
+                </div>
             </form>  
         </div>
            
