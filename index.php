@@ -10,6 +10,12 @@
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     </head>
+    <style>
+      .btn-primary{
+        margin: -10% 5% 0% 45%;
+        padding: 8% 13% 8% 13%;
+      }
+    </style>
     <body>
         <?php
         /* INICIO DE SESIÓN, AUNQUE YA ESTÉ INICIADA, PARA
@@ -43,28 +49,32 @@
     <div class="signup__overlay"></div>
   </div>
        
-           <div class="container__child signup__form">
-            <form>
-                <div class="division">
-                    <label for="username">Usuario</label>
-                    <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
-                </div>
-                <br>
-                <div class="division">
-                <label for="password">Contraseña</label>
-                    <input type="password" name="clave"  class="form-control" id="clave" placeholder="Clave">
-                </div>
-                <br>
-                <div class="m-t-lg">
-                <ul class="list-inline">
-                    <li>
-                        <input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1">
-                    </li>
-                </ul>
-                </div>
-                <div id="resultado" style="margin: 29px;">&nbsp;</div>
-            </form>  
-        </div>
+  <div class="container__child signup__form">
+    <form>
+      <div class="division">
+          <label for="username">Usuario</label>
+              <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
+      </div>
+      <br>
+      <div class="division">
+        <label for="password">Contraseña</label>
+          <input type="password" name="clave"  class="form-control" id="clave" placeholder="Clave">
+      </div>
+      <br>
+        <div id="resultado" style="margin: 2px;">&nbsp;</div>
+            <div class="m-t-lg">
+              <ul class="list-inline">
+                  <li>
+                    <input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1">
+                        <!--margin: -10% 5% 0% 45%;
+                        padding: 8% 13% 8% 13%; ESTO ES PARA EL BOTON-->
+                  </li>
+                  <br><br>
+                  <p class="titulo_registro">Tambien te puedes registrar en este enlace <a href="registro.php" style="color:#FF0000">Registrarse</a></p>
+              </ul>
+            </div>
+        </form>  
+      </div>
            
             <!-- <div>Datos de Acceso Nivel 1</div>
             <div>Usuario: u1 Clave: c1</div>

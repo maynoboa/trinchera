@@ -112,6 +112,8 @@ a:link {
     width: 50%; 
     cursor: pointer; 
 }
+
+
 /* #actualizar{
     clear: both;
     float: left;
@@ -315,7 +317,7 @@ body{
     background: url("../img/fondo3.jpg");
     background-size: cover;
 }
-#resultado{
+#resultado, #resultado_3{
     color: black;
 }
 a,
@@ -323,7 +325,11 @@ a,
   transition: all .25s ease-in;
 }
 
-.signup__container {
+.titulo_registro{
+  color: rgb(14, 13, 13);
+}
+
+.signup__container, .signup__container_2 {
   position: absolute;
   top: 50%;
   right: 0;
@@ -340,6 +346,10 @@ a,
   height: 30rem;
   border-radius: 0.1875rem;
   box-shadow: 0px 0.1875rem 0.4375rem rgba(0, 0, 0, 0.25);
+}
+
+.signup__container_2{
+  height: 43rem;
 }
 
 .signup__overlay {
@@ -370,10 +380,14 @@ a,
 }
 
 .thumbnail__logo,
-.thumbnail__content,
+.thumbnail__content,.thumbnail__content2,
 .redes {
   position: relative;
   z-index: 2;
+}
+
+.thumbnail__content2{
+  margin-bottom: 15%;
 }
 
 .thumbnail__logo {
@@ -440,6 +454,7 @@ label {
   border-left: 0;
   border-radius: 0;
 }
+
 .form-control:focus {
   border-color: #111;
 }
@@ -473,4 +488,28 @@ label {
 }
 .signup__link:focus, .signup__link:hover {
   color: #787878;
+}
+
+#methods{
+  position: absolute;
+  top: 15%;
+  left: 89%;
+  z-index: 10;
+  opacity: 0;
+}
+
+#methods:hover{
+  cursor: pointer;
+}
+
+#methods:checked ~ .fa-eye{
+  opacity:0.2 ;
+}
+
+#methods:checked ~ .fa-eye-slash{
+  opacity:0 ;
+}
+
+.fa-eye-slash {
+  opacity: 0;
 }
