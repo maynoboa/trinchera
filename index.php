@@ -15,6 +15,12 @@
         margin: -10% 5% 0% 45%;
         padding: 8% 13% 8% 13%;
       }
+      i .fa fa-eye, .fa fa-eye-slash{
+      position: absolute;
+      opacity: 0.5;
+      right: 6.5%;
+		  top: 37.5%;
+    }
     </style>
     <body>
         <?php
@@ -60,6 +66,11 @@
         <label for="password">Contraseña</label>
           <input type="password" name="clave"  class="form-control" id="clave" placeholder="Clave">
       </div>
+      <label id="vision">
+            <input type="checkbox" id="methods" onclick="ojo()">
+            <i class="fa fa-eye" ></i>
+            <i class="fa fa-eye-slash" ></i>        
+          </label>
       <br>
         <div id="resultado" style="margin: 2px;">&nbsp;</div>
             <div class="m-t-lg">
@@ -89,6 +100,16 @@
             <div>Usuario: u9 Clave: c9</div>
             <div>Usuario: u10 Clave: c10</div> -->
         </div>
+        <script> 
+    function ojo() { 
+        var temp = document.getElementById("clave"); 
+        if (temp.type === "password") { 
+            temp.type = "text"; 
+        } else { 
+            temp.type = "password"; 
+        } 
+    } 
+</script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/funciones.js" type="text/javascript"></script>
     </body>

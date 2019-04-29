@@ -12,9 +12,19 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <title>Document</title>
 </head>
+<style>
+
+    i{
+      position: absolute;
+      opacity: 0.5;
+      right: 5%;
+		  top: 48.5%;
+    }
+</style>
+
 <body>
     <div class="signup__container_2">
-  <div class="container__child signup__thumbnail">
+  <div class="container__child signup__thumbnail2">
     <div class="thumbnail__logo">
       <h1 class="logo__text">La trinchera del Meme</h1>
     </div>
@@ -29,7 +39,12 @@
       <br>
       <div class="division">
           <label for="username">Contraseña</label>
-              <input type="text" name="clave" class="form-control" id="clave" placeholder="Contraseña">
+              <input type="password" name="clave" class="form-control" id="clave" placeholder="Contraseña">
+          <label id="vision">
+            <input type="checkbox" id="methods" onclick="ojo()">
+            <i class="fa fa-eye" ></i>
+            <i class="fa fa-eye-slash" ></i>        
+          </label>
       </div>
       <br>
       <div class="division">
@@ -56,12 +71,12 @@
       <br>
       <div class="division">
         <label for="username">Segundo Apellido</label>
-          <input type="password" name="apellido_2"  class="form-control" id="apellido_2" placeholder="Segundo Apellido">
+          <input type="text" name="apellido_2"  class="form-control" id="apellido_2" placeholder="Segundo Apellido">
       </div>
       <br>
       <div class="division">
         <label for="username">País</label>
-          <input type="password" name="pais"  class="form-control" id="pais" placeholder="País">
+          <input type="text" name="pais"  class="form-control" id="pais" placeholder="País">
       </div>
       <br>
       <div class="division">
@@ -82,11 +97,6 @@
                         <!--margin: -10% 5% 0% 45%;
                         padding: 8% 13% 8% 13%; ESTO ES PARA EL BOTON-->
                   </li>
-                  <label id="vision">
-            <input type="checkbox" id="methods" onclick="ojo()">
-            <i class="fa fa-eye"></i>
-            <i class="fa fa-eye-slash"></i>        
-            </label>
                   <br><br>
                   <p class="titulo_registro">Volver atras <a href="index.php" style="color:#FF0000">Aquí</a></p>
               </ul>

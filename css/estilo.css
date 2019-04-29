@@ -379,6 +379,18 @@ a,
   background-size: cover;
 }
 
+.signup__thumbnail2 {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: url("../img/happy-people-friends-2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
 .thumbnail__logo,
 .thumbnail__content,.thumbnail__content2,
 .redes {
@@ -502,11 +514,11 @@ label {
   cursor: pointer;
 }
 
-#methods:checked ~ .fa-eye{
+#methods:checked ~ .fa-eye-slash{
   opacity:0.2 ;
 }
 
-#methods:checked ~ .fa-eye-slash{
+#methods:checked ~ .fa-eye{
   opacity:0 ;
 }
 

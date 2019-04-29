@@ -64,6 +64,7 @@ $(document).ready(function () {
                     ape2_usu: $("#apellido_2").val(),
                     pais_usu: $("#pais").val(),
                     sex_usu: $("#sexo").val()}
+                    
             }).done(function (msg){
                 $("#usuario").val("");
                 $("#clave").val("");
