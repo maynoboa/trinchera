@@ -161,18 +161,3 @@ $(document).ready(function () {
    });
    
   //-----------------like
-  
-$(document).ready(function () {
-	$("#like").click(function (event) {
-
-    	$.ajax({
-        		type: "POST",
-        		url: "like.php",
-        		// data: {
-                //     texto1: $("#texto1").val()               
-                // }
-    	}).done(function (msg) {
-        	
-    	});
-	});
-});

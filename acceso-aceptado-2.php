@@ -33,15 +33,17 @@
                 
                 <div class="publicacion">
                 <input type="button" class="botonpub" id="botonpub1" value="Actualizar" >
-                       <div class="publicacion"><textarea rows="4" cols="50" class="texto" name="texto1" id="texto1"></textarea></div>
-                       
+                       <div class="publicacion"><textarea rows="4" cols="50" class="texto" name="texto1" id="texto1"></textarea></div>                  
                             <!-- <form enctype="multipart/form-data" action="fichfoto.php" method="POST">
                             <input name="botonExaminar" type="file" />                          
                             <input type="submit" value="Enviar" />
                         </form>                              -->
                     <div id="respuesta"></div>
        	                <div class="publicacion"><input type="button" name="boton1" id="boton1" class="botonpub" value="Publicar" ></div>
-                        <div class="contenidoPublicacion"><?php require 'publicaciones.php'; ?></div>
+                        <div class="contenidoPublicacion">
+                            <?php require 'publicaciones.php'; ?>
+                            
+                        </div>
                 </div>
             </div>
             <div id="columnaDer">
@@ -58,5 +60,6 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/funciones.js" type="text/javascript"></script>
+        <script src="js/likes.js" type="text/javascript"></script>
     </body>
 </html>

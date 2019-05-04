@@ -6,15 +6,25 @@ if ($mysqli->connect_errno) {
     printf("Error en la conexion: %s\n", $mysqli->connect_error);
     exit();
 }
-$resultado = $mysqli->query("SELECT DISTINCT id_pub,co_pub,co_pub,id_usu,fe_pub,img_pub from pub,seg where id_usu=".$_SESSION['id_usu']." or id_usu in (select id_us2 from seg where id_us1=".$_SESSION['id_usu'].") order by fe_pub desc");
+$resultado = $mysqli->query("SELECT DISTINCT id_pub,co_pub,co_pub,id_usu,fe_pub,img_pub,likes from pub,seg where id_usu=".$_SESSION['id_usu']." or id_usu in (select id_us2 from seg where id_us1=".$_SESSION['id_usu'].") order by fe_pub desc");
 $numeroRegistros = $resultado->num_rows;
 if ($numeroRegistros) {
     while ($fila = $resultado->fetch_assoc()) {
         $resultado2 = $mysqli->query("SELECT no_usu ,img from usu where id_usu=".$fila['id_usu']."");
-        while ($fila2 = $resultado2->fetch_assoc() ) {
-            $nombre=$fila2['no_usu'];
-            $img=$fila2['img'];
-        }
+ 
+       // $resul = $mysqli->query("SELECT count(post) FROM likes WHERE usu=.$fila['id_pub']. and post=.$fila['id_pub'].");
+        //$resuss = $mysqli->query("SELECT * from pub");
+            // $likess = $query->num_rows;
+            while ($fila2 = $resultado2->fetch_assoc() ) {
+                $nombre=$fila2['no_usu'];
+                $img=$fila2['img'];
+                
+            }
+            // $query = $mysqli->query("SELECT * FROM likes WHERE post = ".$fila['id_pub']." AND usuario = ".$fila['id_usu']." ");  
+            // while ($fila3 = $query->fetch_assoc() ) {
+            //         $id_lik=$fila3['id_lik'];
+            //         // $poust=$fila3['total'];
+            //     }
         if($fila['img_pub']==true){
             echo "
             <div id='".$fila['id_pub']."' class='contenidoConcreto'>
@@ -27,10 +37,14 @@ if ($numeroRegistros) {
                     </div>
                     <img src=".$fila['img_pub']." class='imgpub'>
                 </div>
+                
             </div>";
         }
         else{
+          //EL PRIUMER DIV HAY QUE ARREGLAR 
             echo "
+            
+            <div id='a_".$fila['id_pub']."' class='contenidoConcreto' ></div>
             <div id='".$fila['id_pub']."' class='contenidoConcreto'>
                 <div class='nompub'>
                     <img src=" .$img." class='usu1 ber'>
@@ -41,8 +55,11 @@ if ($numeroRegistros) {
                     </div>
                    
                 </div>
-                <div id='like'>like
+                <div class='like' id='".$fila['id_pub']."'>Me gusta <3
+                    
                 </div>
+               <span id='a_".$fila['id_pub']."'> 
+                </span>
             </div>";
         }
         
@@ -52,16 +69,18 @@ else{echo 'No hay publicaciones';}
 //  $resultado->free();
 //   $mysqli->close();
 ?>
-<!-- select a.no_usu, a.co_usu, b.id_us1,c.co_pub from usu a 
-inner join seg b on a.id_usu = b.id_us1 
-inner join pub c on b.id_us1=c.id_pub
-where a.id_usu=3 -->
 
-<!-- select a.id_usu,a.no_usu, a.co_usu, b.id_us1,c.co_pub from usu a 
-inner join seg b on a.id_usu = b.id_us1 
-inner join pub c on b.id_us1=c.id_pub
-where a.id_usu=3 in (select b.id_us2 from usu a inner join seg b on a.id_usu = b.id_us1 where a.id_usu=3) -->
+ <!-- <img src='img/likes/como.png'> Me gusta  -->
 
-<!-- select c.id_pub,c.co_pub,c.id_usu,c.fe_pub,b.id_us1, b.id_us2 from pub c 
-inner join seg b on b.id_us1=c.id_usu 
-where b.id_us1=3 or b.id_us1 in (select id_us2 from seg where id_us1=3) -->
+ <!-- <ul class='list-inline'>
+                    
+                        <li>
+                            <div class='btn btn-default btn-xs like' id=".$fila['id_pub'].">
+                               me gusta
+                            </div> 
+                            <span id='likes_".$fila['id_pub']."'> 
+                                (".$fila['likes'].")
+                             </span>
+                        </li>
+                 
+                </ul> -->
