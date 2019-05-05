@@ -34,19 +34,22 @@ if ($count == 0) {
 	// 
 
 	echo "
-	<div class='nompub'>
-		<img src=" .$img." class='usu1 ber'>
-		<div class='maque'>".$nombre."</div>
-	</div>		
-	<div class='comen'>".$fila3['co_pub']."
-		<div class='size'>publicado:".$fila3['fe_pub']."
+	
+		<div class='nompub'>
+			<img src=" .$img." class='usu1 ber'>
+			<div class='maque'>".$nombre."</div>
+		</div>		
+		<div class='comen'>".$fila3['co_pub']."
+			<div class='size'>publicado:".$fila3['fe_pub']."
+			</div>
+			
+		</div>	
+		<div class='like1' id='".$post."'>								
+			<img class='nomegusta'  src='img/likes/corazon.png'> no me gusta
 		</div>
+		<span id='a_".$post."'>()</span>            
+ 
 		
-  </div>									
-	<img class='nomegusta'  src='img/likes/corazon.png'> no me gusta
-	<span class='countlikes'> 
-	()
-	 </span> 
 	 ";
  }
  else 
@@ -61,15 +64,17 @@ if ($count == 0) {
 		<div class='nompub'>
 				<img src=" .$img." class='usu1 ber'>
 				<div class='maque'>".$nombre."</div>
+			</div>
+				<div class='comen'>".$fila3['co_pub']."
+				<div class='size'>publicado:".$fila3['fe_pub']."
+			</div>	
 		</div>
-			<div class='comen'>".$fila3['co_pub']."
-			<div class='size'>publicado:".$fila3['fe_pub']."
+		<div class='like1' id='".$post."'>	
+			<img src='img/likes/como.png'> me gusta
 		</div>	
-  </div>
-		<img src='img/likes/como.png'> me gusta
-			<span class='countlikes'> 
-			()
-			</span> ";
+		<span id='a_".$post."'>()</span>            
+		"				
+			;
 	  
  }
 

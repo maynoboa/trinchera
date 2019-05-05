@@ -41,27 +41,56 @@ if ($numeroRegistros) {
             </div>";
         }
         else{
-          //EL PRIUMER DIV HAY QUE ARREGLAR 
-            echo "
-            
-            <div id='a_".$fila['id_pub']."' class='contenidoConcreto' ></div>
-            <div id='".$fila['id_pub']."' class='contenidoConcreto'>
-                <div class='nompub'>
-                    <img src=" .$img." class='usu1 ber'>
-                    <div class='maque'>".$nombre."</div>
-                </div>
-                <div class='comen'>".$fila['co_pub']."
-                    <div class='size'>publicado:".$fila['fe_pub']."
-                    </div>
-                   
-                </div>
-                <div class='like' id='".$fila['id_pub']."'>Me gusta <3
+          //EL PRIMER DIV HAY QUE ARREGLAR 
+          $query = $mysqli->query("SELECT * FROM likes WHERE post = ".$fila['id_pub']." AND usuario = ".$fila['id_usu']." "); 
+          $registrolikes = $query->num_rows;
+                if ($registrolikes==0) {
+                echo "
                     
-                </div>
-               <span id='a_".$fila['id_pub']."'> 
-                </span>
-            </div>";
+                    
+                    <div id='".$fila['id_pub']."' class='contenidoConcreto'>
+                        <div id='c_".$fila['id_pub']."'>
+                            <div class='nompub'>
+                                <img src=" .$img." class='usu1 ber'>
+                                <div class='maque'>".$nombre."</div>
+                            </div>
+                            <div class='comen'>".$fila['co_pub']."
+                                <div class='size'>publicado:".$fila['fe_pub']."
+                                </div>
+                            
+                            </div>
+                            <div class='like' id='".$fila['id_pub']."'>
+                                <img src='img/likes/como.png'> Me gusta <3                  
+                            </div>
+                            <span id='a_".$fila['id_pub']."'> </span>
+                        </div>
+                    </div>";
+                }
+                else{
+                    echo "
+                    
+                    
+                    <div id='".$fila['id_pub']."' class='contenidoConcreto'>
+                        <div id='c_".$fila['id_pub']."'>
+                            <div class='nompub'>
+                                <img src=" .$img." class='usu1 ber'>
+                                <div class='maque'>".$nombre."</div>
+                            </div>
+                            <div class='comen'>".$fila['co_pub']."
+                                <div class='size'>publicado:".$fila['fe_pub']."
+                                </div>                            
+                            </div>
+                            <div class='like' id='".$fila['id_pub']."'>
+                                <img class='nomegusta'  src='img/likes/corazon.png'> no me gusta                 
+                            </div>
+                            <span id='a_".$fila['id_pub']."'>  </span>            
+                        </div>
+                    </div>";
+                }
+
+        
         }
+         
         
     }
 }

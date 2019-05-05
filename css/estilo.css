@@ -276,9 +276,9 @@ border: 1px solid black;
     background-color: blue;
     padding: 10px;
 }
-.logo2{
+/* .logo2{
     width: 47%;
-}
+} */
 .cerrarSesion2{
     display: flex;
     flex-direction: row-reverse;
