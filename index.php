@@ -4,14 +4,24 @@
         <meta charset="UTF-8">
         <title>Autenticación Multinivel</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     </head>
+    <style>
+      .btn-primary{
+        margin: -10% 5% 0% 45%;
+        padding: 8% 13% 8% 13%;
+      }
+      i .fa fa-eye, .fa fa-eye-slash{
+      position: absolute;
+      opacity: 0.5;
+      right: 6.5%;
+		  top: 37.5%;
+    }
+    </style>
     <body>
         <?php
         /* INICIO DE SESIÓN, AUNQUE YA ESTÉ INICIADA, PARA
@@ -45,20 +55,37 @@
     <div class="signup__overlay"></div>
   </div>
        
-           <div class="container__child signup__form">
-            <form>
-                <div id="resultado" style="margin: 29px;">&nbsp;</div>
-                <div class="division"><input type="text" name="usuario" class="form-control pad" id="usuario" placeholder="Usuario"></div>
-                <div class="division"><input type="password" name="clave"  class="form-control pad" id="clave" placeholder="Clave"></div>
-                <div class="m-t-lg">
-                <ul class="list-inline">
-                    <li>
-                        <input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1">
-                        </li>
-                </ul>
-                </div>
-            </form>  
-        </div>
+  <div class="container__child signup__form">
+    <form>
+      <div class="division">
+          <label for="username">Usuario</label>
+              <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
+      </div>
+      <br>
+      <div class="division">
+        <label for="password">Contraseña</label>
+          <input type="password" name="clave"  class="form-control" id="clave" placeholder="Clave">
+      </div>
+      <label id="vision">
+            <input type="checkbox" id="methods" onclick="ojo()">
+            <i class="fa fa-eye" ></i>
+            <i class="fa fa-eye-slash" ></i>        
+          </label>
+      <br>
+        <div id="resultado" style="margin: 2px;">&nbsp;</div>
+            <div class="m-t-lg">
+              <ul class="list-inline">
+                  <li>
+                    <input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1">
+                        <!--margin: -10% 5% 0% 45%;
+                        padding: 8% 13% 8% 13%; ESTO ES PARA EL BOTON-->
+                  </li>
+                  <br><br>
+                  <p class="titulo_registro">Tambien te puedes registrar en este enlace <a href="registro.php" style="color:#FF0000">Registrarse</a></p>
+              </ul>
+            </div>
+        </form>  
+      </div>
            
             <!-- <div>Datos de Acceso Nivel 1</div>
             <div>Usuario: u1 Clave: c1</div>
@@ -73,6 +100,16 @@
             <div>Usuario: u9 Clave: c9</div>
             <div>Usuario: u10 Clave: c10</div> -->
         </div>
+        <script> 
+    function ojo() { 
+        var temp = document.getElementById("clave"); 
+        if (temp.type === "password") { 
+            temp.type = "text"; 
+        } else { 
+            temp.type = "password"; 
+        } 
+    } 
+</script> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/funciones.js" type="text/javascript"></script>
     </body>

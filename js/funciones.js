@@ -42,6 +42,44 @@ $(document).ready(function () {
 
 });
 
+$(document).ready(function () {
+    $("#reg_usu").click(function (event) {
+
+        if ($("#usuario").val().trim().length === 0 || $("#clave").val().trim().length === 0 
+        || $("#correo_electronico").val().trim().length === 0 || $("#nombre_usuario").val().trim().length === 0
+        || $("#apellido_1").val().trim().length === 0 || $("#apellido_2").val().trim().length === 0
+        || $("#pais").val().trim().length === 0 || $("#sexo").val().trim().length === 0) {
+            $("#resultado_3").html("Completa todos los datos para el registro.");
+        }
+        else {
+            $.ajax({
+                type: "POST",
+                url: "registrar-usuario.php",
+                data:{
+                    co_usu: $("#usuario").val(),
+                    cl_usu: $("#clave").val(),
+                    correo_usu: $("#correo_electronico").val(),
+                    no_usu: $("#nombre_usuario").val(),
+                    ape1_usu: $("#apellido_1").val(),
+                    ape2_usu: $("#apellido_2").val(),
+                    pais_usu: $("#pais").val(),
+                    sex_usu: $("#sexo").val()}
+                    
+            }).done(function (msg){
+                $("#usuario").val("");
+                $("#clave").val("");
+                $("#correo_electronico").val("");
+                $("#nombre_usuario").val("");
+                $("#apellido_1").val("");
+                $("#apellido_2").val("");
+                $("#pais").val("");
+                $("#sexo").val("");
+                $("#resultado_3").html("Datos insertados correctamente. Pulse el botón 'Volver Página Inicial' para poder iniciar tu sesión.");
+            });
+        } 
+    });
+});
+
 
 $(document).ready(function () {    
  // $(".usu1").click(function (event) {

@@ -25,7 +25,7 @@
             </div> 
             <div class="informacion">
                 <div class="infoleft">
-                    <img src="<?php echo $_SESSION["img"]?>" class="img_perf" width=250 height=250 >
+                    <img src="<?php echo $_SESSION["img"]?>" class="img_perf resultadoo" width=250 height=250 >
                     <p class="usu_img"><?php echo $_SESSION["no_usu"]?></p>
                 </div>
                 <div class="inforight">
@@ -48,7 +48,10 @@
                             <?php echo $_SESSION["pais_usu"]?>  
                         </div>
                     </div>
-                    
+                    <form enctype="multipart/form-data" method="post"  name="form1">
+                        <input type="file" name="file1" required />
+                        <input type="submit" value="Enviar" />
+                    </form>
                 </div>
             </div>
             <!-- <div id= "parte-superior">
@@ -83,5 +86,6 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/funciones.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/motor.js"></script>
     </body>
 </html>

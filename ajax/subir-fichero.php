@@ -1,6 +1,6 @@
 <?php
-$ubicacion = 'img/';
-require 'seguridad-global-2.php';
+
+$ubicacion = './img-subidas/';
 require_once ('con1.php');	
 $mysqli = new mysqli($se, $us, $co, $bd);
 if ($mysqli->connect_errno) {
@@ -10,9 +10,19 @@ if ($mysqli->connect_errno) {
 $archivo = $ubicacion . basename($_FILES['file1']['name']);
 if (move_uploaded_file($_FILES['file1']['tmp_name'], $archivo)){
 echo "Archivo subido correctamente.\n";
-$mysqli->query("UPDATE usu SET img='$archivo' WHERE id_usu=".$_SESSION['id_usu']);
+
+$mysqli->query("UPDATE usu SET img='$archivo' WHERE id_usu=3");
+
+// $resultado = $mysqli->query("SELECT id_usu, no_usu, es_usu,img from usu where id_usu=3 and ni_usu=2 and es_usu=1");
+// $numeroRegistros = $resultado->num_rows;
+// if ($numeroRegistros) {
+//     while ($fila = $resultado->fetch_assoc()) {
+//         echo "<div id='".$fila['id_usu']."'><div class='circulo'><img src='".$fila['img']."' class='imagen'></div>".$fila['no_usu']."</div>";
+//     }
+// }
 
 
+echo "<br/> <h1>".$archivo. "</h1> ";
 /* INICIO - Captura de los datos extras enviados junto con la imagen */
 /* echo $_POST['dato1']; */
 /* FIN - Captura de los datos extras enviados junto con la imagen */
