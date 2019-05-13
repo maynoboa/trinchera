@@ -63,7 +63,9 @@ $(document).ready(function () {
                     ape1_usu: $("#apellido_1").val(),
                     ape2_usu: $("#apellido_2").val(),
                     pais_usu: $("#pais").val(),
-                    sex_usu: $("#sexo").val()}
+                    sex_usu: $("#sexo").val(),
+                    img: $("#img").val()}
+
                     
             }).done(function (msg){
                 $("#usuario").val("");
@@ -181,7 +183,9 @@ $(document).ready(function () {
            $.ajax({
                type: "POST",
                url: "usuario-a-desbloquear.php",
-               data: { id_us2: $(this).attr("id") }
+               data: { 
+                   id_us2: $(this).attr("id") 
+                }
              }).done(function( msg ) {
                $("#queNosigo").html( msg );
    
@@ -196,4 +200,4 @@ $(document).ready(function () {
        });
    });
    
-  
+  //-----------------like

@@ -15,7 +15,7 @@
         margin: -10% 5% 0% 45%;
         padding: 8% 13% 8% 13%;
       }
-      i .fa fa-eye, .fa fa-eye-slash{
+      .fa-eye, .fa-eye-slash{
       position: absolute;
       opacity: 0.5;
       right: 6.5%;
@@ -68,8 +68,8 @@
       </div>
       <label id="vision">
             <input type="checkbox" id="methods" onclick="ojo()">
-            <i class="fa fa-eye" ></i>
-            <i class="fa fa-eye-slash" ></i>        
+            <i class="fa fa-eye-slash" ></i>
+            <i class="fa fa-eye " ></i>        
           </label>
       <br>
         <div id="resultado" style="margin: 2px;">&nbsp;</div>

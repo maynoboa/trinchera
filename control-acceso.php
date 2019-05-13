@@ -9,11 +9,6 @@ $mysqli->set_charset("utf8");
 $usuario = $mysqli->real_escape_string($datos['c1']);
 $clave = $mysqli->real_escape_string($datos['c2']);
 // 
-
- 
-  
-  
-
   if ($resultado = $mysqli->query("SELECT id_usu, ni_usu, no_usu,ape1_usu,ape2_usu,correo_usu,pais_usu,es_usu,img FROM usu WHERE co_usu='$usuario' and cl_usu='$clave'")) {
    
     /* DETERMINA EL NÚMERO DE REGISTROS QUE DEVUELVE LA CONSULTA */
@@ -36,7 +31,6 @@ $clave = $mysqli->real_escape_string($datos['c2']);
           $_SESSION["ape2_usu"]=$fila['ape2_usu'];
           $_SESSION["correo_usu"]=$fila['correo_usu'];
           $_SESSION["pais_usu"]=$fila['pais_usu'];
-
           $_SESSION["es_usu"]=$fila['es_usu'];
           $_SESSION["img"]=$fila['img'];
         }

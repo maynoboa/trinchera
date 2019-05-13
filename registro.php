@@ -89,6 +89,11 @@
         </select>
       </div>
       <br>
+      <div class="division">
+        <label for="username">Imagen de Perfil</label>
+          <input type="file" name="img"  class="form-control" id="img" >
+      </div>
+      <br>
         <div id="resultado_3" style="margin: 2px;">&nbsp;</div>
             <div class="m-t-lg">
               <ul class="list-inline">
