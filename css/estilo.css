@@ -544,5 +544,94 @@ label {
   opacity: 0;
 }
 
+.infoleft {
+	border-radius: 50%;
+	border: 4px solid white;
+	height: 210px;
+	overflow: hidden;
+	transform: translateX(-10%) translateY(-2%);
+	width: 210px;
+  top: 0;
+}
+
+ .img_perf{
+  box-sizing: border-box;
+  height: 100%;
+  left: 50%;
+  max-height: 100%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: auto;
+}
 
 
+ .image-wrapper {
+	background: rgba(0, 0, 0, 0.2);;
+	left: 0;
+	position: absolute;
+	transition: bottom 0.55s linear;
+	width: 100%;
+} 
+
+/* .image-wrapper {
+  width: 200px;
+  height: 250px;
+  background-color: #00cccc;
+  position: absolute;
+  transition: all .8s ease-in;
+} */
+
+/*y como sólo hay una que sube, pues es la única que tiene esta etiqueta*/
+.image-sube {
+  bottom: -174px;
+  right: 250px;
+  height: 24%;
+}
+
+.infoleft:hover .image-sube {
+  bottom: 0;
+} 
+
+
+.edit {
+	color: white;
+	cursor: pointer;
+	font-size: 22px;
+	top: 10px;
+}
+
+.hidden-input {
+	left: -999px;
+	position: absolute;
+} 
+
+.cover {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+  width: 100%;
+}
+
+.glyphicon {
+  position: relative;
+  top: 10px;
+  left: 95px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.loader {
+	animation: spin 0.35s infinite linear;
+	border: 2px solid #707070;
+	border-radius: 50%;
+	border-top-color: white;
+	height: 25px;
+	transform-origin: left;
+	top: 45%;
+	width: 25px;
+} 

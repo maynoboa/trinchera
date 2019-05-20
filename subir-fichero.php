@@ -1,5 +1,5 @@
 <?php
-$ubicacion = './img/';
+$ubicacion = 'img/';
 require 'seguridad-global-2.php';
 require_once ('con1.php');	
 $mysqli = new mysqli($se, $us, $co, $bd);
@@ -11,7 +11,6 @@ $archivo = $ubicacion . basename($_FILES['file1']['name']);
 if (move_uploaded_file($_FILES['file1']['tmp_name'], $archivo)){
 echo "Archivo subido correctamente.\n";
 $mysqli->query("UPDATE usu SET img='$archivo' WHERE id_usu=".$_SESSION['id_usu']);
-
 
 
 /* INICIO - Captura de los datos extras enviados junto con la imagen */

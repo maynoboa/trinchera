@@ -22,8 +22,8 @@
     require_once ('con1.php');
 	$mysqli->set_charset("utf8");
 
-    if ($mysqli->query("INSERT INTO usu (co_usu, cl_usu, correo_usu, no_usu, ape1_usu, ape2_usu, pais_usu, sex_usu, ni_usu, es_usu, img) VALUES ('".$usuario."','".$clave."',
-	'".$correo_electronico."', '".$nombre_usuario."', '".$apellido_1."', '".$apellido_2."', '".$pais."', '".$sexo."', '2', '1', '".$img."')")===TRUE) {
+    if ($mysqli->query("INSERT INTO usu (co_usu, cl_usu, correo_usu, no_usu, ape1_usu, ape2_usu, pais_usu, sex_usu, ni_usu, es_usu,img) VALUES ('".$usuario."','".$clave."',
+	'".$correo_electronico."', '".$nombre_usuario."', '".$apellido_1."', '".$apellido_2."', '".$pais."', '".$sexo."', '2', '1','img/perfildefecto/no-photo.png')")===TRUE) {
 
 		printf("datos insertados");
 
