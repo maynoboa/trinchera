@@ -228,7 +228,7 @@
 				<a><img src="images/mem5.jpg" alt="portfolio image" class="img-fluid"></a>
 			</div>
 			<div class="col-md-3 col-6 gal-img">
-				<a"><img src="images/mem6.jpg" alt="portfolio image" class="img-fluid"></a>
+				<a><img src="images/mem6.jpg" alt="portfolio image" class="img-fluid"></a>
 			</div>
 			<div class="col-md-3 col-6 gal-img">
 				<a><img src="images/mem7.jpg" alt="portfolio image" class="img-fluid"></a>
