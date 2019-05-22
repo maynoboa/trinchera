@@ -42,7 +42,7 @@
 			<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-2 ml-auto">
-				<li class=""><a href="index.html">Inicio</a></li>
+				<li class=""><a href="main.php">Inicio</a></li>
 				<li class=""><a href="#about">Acerca de</a></li>
 				<li class="">
 				<!-- First Tier Drop Down -->
@@ -52,7 +52,8 @@
 				<ul class="inner-ul">
 					<li><a href="#process">Proceso de Mercado</a></li>
 					<li><a href="#portfolio">Memes más destacados</a></li>
-				<li><a href="#partners">Redes Sociales</a></li>
+					<li><a href="#partners">Redes Sociales</a></li>
+					<li><a href="cookies.php">Información Cookies</a></li>
 				</ul>
 				</li>
 			</ul>
@@ -83,6 +84,15 @@
 	</div>
 </div>
 <!-- //banner -->
+
+<div id="overbox3">
+    <div id="infobox3">
+        <p>Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas navegando consideramos que aceptas su uso.
+        <a href="cookies.php" >Más información</a>
+        <a onclick="aceptar_cookies();" style="cursor:pointer;">X Cerrar</a></p>
+    </div>
+</div>
+
 
 <!-- about -->
 <section class="about py-5" id="about">
@@ -249,15 +259,6 @@
 		<div class="inner-sec-w3ls">
 			<div class="sponsers-icon text-center">
 				<ul class="list-unstyled partners-icon row">
-					<li class="col-md-2 col-4">		
-						<span class="fab fa-twitter" id="twitter" aria-hidden="true"></span>
-					</li>
-					<li class="col-md-2 col-4 border-left border-right">
-						<span class="fab fa-facebook-f" id="facebook" aria-hidden="true"></span>
-					</li>
-					<li class="col-md-2 col-4 border-right">
-						<span class="fab fa-github" id="github" aria-hidden="true"></span>
-					</li>
 					<li class="col-md-2 col-4 border-right mt-md-0 mt-3">
 						<span class="fab fa-pinterest" id="pinterest" aria-hidden="true"></span>
 					</li>
@@ -266,6 +267,15 @@
 					</li>
 					<li class="col-md-2 col-4 mt-md-0 mt-3">
 						<span class="fab fa-youtube" id="youtube" aria-hidden="true"></span>
+					</li>
+					<li class="col-md-2 col-4">		
+						<span class="fab fa-twitter" id="twitter" aria-hidden="true"></span>
+					</li>
+					<li class="col-md-2 col-4 border-left border-right">
+						<span class="fab fa-facebook-f" id="facebook" aria-hidden="true"></span>
+					</li>
+					<li class="col-md-2 col-4 border-right">
+						<span class="fab fa-github" id="github" aria-hidden="true"></span>
 					</li>
 				</ul>
 			</div>
@@ -419,6 +429,8 @@
 	</div> -->
 	<!-- //popup for register -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/funciones.js" type="text/javascript"></script>
+    <script src="js/funciones.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
 </body>
 </html>
