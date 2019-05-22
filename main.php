@@ -16,27 +16,22 @@
         }
     </script>
 	
-	<!-- css files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
-	<!-- //css files -->
-	
-	<!-- google fonts -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
 	<link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-	<!-- //google fonts -->
 	
 </head>
 <body>
 
 
-<!-- //header -->
+
 <header class="py-4">
 	<div class="container">
 			<div id="logo">
 				<h1> <a href="index.html"><span aria-hidden="true"></span> La Trinchera del Meme</a></h1>
 			</div>
-		<!-- nav -->
+
 		<nav class="d-lg-flex">
 
 			<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
@@ -44,8 +39,9 @@
 			<ul class="menu mt-2 ml-auto">
 				<li class=""><a href="main.php">Inicio</a></li>
 				<li class=""><a href="#about">Acerca de</a></li>
+				<li class=""><a href="index.php">Inicio Seguro</a></li>
 				<li class="">
-				<!-- First Tier Drop Down -->
+
 				<label for="drop-2" class="toggle">Más <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
 				<a href="#">Más <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 				<input type="checkbox" id="drop-2"/>
@@ -343,7 +339,10 @@
 						<a class="" href="#process">Mercado</a>
 					</li>
 					<li>
-						<a class="" href="#portfolio">Portfolio</a>
+						<a class="" href="#memes">Memes más destacados</a>
+					</li>
+					<li>
+						<a class="" href="cookies.php">Normas y cookies</a>
 					</li>
 				</ul>
 			</div>

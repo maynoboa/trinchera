@@ -1231,6 +1231,10 @@ a.move-top span{
 		position: absolute;
 		right: 10%;
 	}
+	.login-icon a{
+		margin: 2.5em 6em 0em 0em;
+    	padding: 0.4em 0.7em 0.2em 1em;
+	}
 	.information p {
 		font-size: 15px;
 	}

@@ -34,7 +34,8 @@
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-2 ml-auto">
 				<li class=""><a href="main.php">Inicio</a></li>
-				<li class=""><a href="#about">Acerca de</a></li>
+                <li class=""><a href="#about">Acerca de</a></li>
+                <li class=""><a href="index.php">Inicio Seguro</a></li>
 				<li class="">
 				<!-- First Tier Drop Down -->
 				<label for="drop-2" class="toggle">Más <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
