@@ -176,6 +176,12 @@
 					<li>
 						<a class="" href="#portfolio">Portfolio</a>
 					</li>
+					<li>
+						<a class="" href="#memes">Memes más destacados</a>
+					</li>
+					<li>
+						<a class="" href="cookies.php">Normas y cookies</a>
+					</li>
 				</ul>
 			</div>
 		</div>
