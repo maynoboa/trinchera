@@ -24,13 +24,9 @@
     </style>
     <body>
         <?php
-        /* INICIO DE SESIÓN, AUNQUE YA ESTÉ INICIADA, PARA
-         * DESTRUIRLA AL CERRAR LA SESIÓN DESDE acceso-aceptado-n.php
-         */
         if (!isset($_SESSION)) {
             session_start();
         }
-        /* DESTRUCCIÓN DE LA SESIÓN */
         session_destroy();
         ?>
 
@@ -81,26 +77,13 @@
                         padding: 8% 13% 8% 13%; ESTO ES PARA EL BOTON-->
                   </li>
                   <br><br>
-                  <p class="titulo_registro">Tambien te puedes registrar en este enlace <a href="registro.php" style="color:#FF0000">Registrarse</a></p>
+                  <p class="titulo_registro">Tambien te puedes registrar en este enlace <a href="registro.php" style="color:#FF0000">Registrarse</a> o ir a la página oficial <a href="main.php" 
+                  style="color:#FF0000">Aquí</a></p>
               </ul>
             </div>
         </form>  
-      </div>
-           
-            <!-- <div>Datos de Acceso Nivel 1</div>
-            <div>Usuario: u1 Clave: c1</div>
-            <div>Usuario: u2 Clave: c2</div>
-            <div>Datos de Acceso Nivel 2</div>
-            <div>Usuario: u3 Clave: c3</div>
-            <div>Usuario: u4 Clave: c4</div>
-            <div>Usuario: u5 Clave: c5</div>
-            <div>Usuario: u6 Clave: c6</div>
-            <div>Usuario: u7 Clave: c7</div>
-            <div>Usuario: u8 Clave: c8</div>
-            <div>Usuario: u9 Clave: c9</div>
-            <div>Usuario: u10 Clave: c10</div> -->
-        </div>
-        <script> 
+
+    <script> 
     function ojo() { 
         var temp = document.getElementById("clave"); 
         if (temp.type === "password") { 
@@ -109,7 +92,20 @@
             temp.type = "password"; 
         } 
     } 
-</script> 
+    </script>
+    <script> 
+    $(window).scroll(function()
+            {
+                if ($(this).scrollTop() > 250){
+					 $('.py-4').addClass("fixed").fadeIn();
+					 $('.container').addClass("margen").fadeIn();
+				}
+                else {
+					$('.py-4').removeClass("fixed");
+					$('.container').removeClass("margen");
+				}
+            });
+    </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/funciones.js" type="text/javascript"></script>
     </body>

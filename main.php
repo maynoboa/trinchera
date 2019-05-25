@@ -3,7 +3,6 @@
 <html lang="es">
 <head>
 <title>La Trinchera del Meme</title>
-<!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script>
@@ -26,10 +25,10 @@
 
 
 
-<header class="py-4">
+<header class="py-4" id="move-menu">
 	<div class="container">
 			<div id="logo">
-				<h1> <a href="index.html"><span aria-hidden="true"></span> La Trinchera del Meme</a></h1>
+				<h1> <a href="main.php"><span aria-hidden="true"></span> La Trinchera del Meme</a></h1>
 			</div>
 
 		<nav class="d-lg-flex">
@@ -40,6 +39,7 @@
 				<li class=""><a href="main.php">Inicio</a></li>
 				<li class=""><a href="#about">Acerca de</a></li>
 				<li class=""><a href="index.php">Inicio Seguro</a></li>
+				<li><a href="">Editor</a></li>
 				<li class="">
 
 				<label for="drop-2" class="toggle">Más <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
@@ -47,7 +47,7 @@
 				<input type="checkbox" id="drop-2"/>
 				<ul class="inner-ul">
 					<li><a href="#process">Proceso de Mercado</a></li>
-					<li><a href="#portfolio">Memes más destacados</a></li>
+					<li><a href="#memes">Memes más destacados</a></li>
 					<li><a href="#partners">Redes Sociales</a></li>
 					<li><a href="cookies.php">Información Cookies</a></li>
 				</ul>
@@ -58,12 +58,10 @@
 			</div>
 		</nav>
 		<div class="clear"></div>
-		<!-- //nav -->
 	</div>
 </header>
-<!-- //header -->
-		
-<!-- banner -->
+
+
 <div class="banner" id="home">
 	<div class="container">
 		<div class="row banner-text">
@@ -79,7 +77,7 @@
 		</div>
 	</div>
 </div>
-<!-- //banner -->
+
 
 <div id="overbox3">
     <div id="infobox3">
@@ -90,7 +88,6 @@
 </div>
 
 
-<!-- about -->
 <section class="about py-5" id="about">
 	<div class="container py-lg-5 py-sm-3">
 		<div class="row">
@@ -108,9 +105,8 @@
 		</div>
 	</div>
 </section>
-<!-- //about -->
 
-<!-- why choose us -->
+
 <section class="choose py-5" id="services">
 	<div class="container py-md-3">
 		<h3 class="heading mb-5">Que ofrecemos</h3>
@@ -154,9 +150,8 @@
 		</div>
 	</div>
 </section>
-<!-- //why choose us -->
 
-<!-- Offered Services -->
+
 <section class="process py-5" id="process">
 	<div class="container py-md-3">
 		<h3 class="heading mb-5">Proceso de Mercado</h3>
@@ -192,9 +187,8 @@
 		</div>
 	</div>
 </section>
-<!-- Offered Services -->
 
-<!-- video -->
+
 <section class="video py-5" id="video">
 	<div class="container">
 		<div class="inner-sec-w3ls py-lg-5 py-3">
@@ -211,9 +205,8 @@
 		</div>
 	</div>
 </section>
-<!-- //video -->
 
-<!-- portfolio -->
+
 <section class="portfolio py-5" id="memes">
 	<div class="container py-3">
 		<h3 class="heading text-capitalize mb-md-5 mb-4">Memes más destacados<span></span></h3>
@@ -245,10 +238,8 @@
 		</div>
 	</div>
 </section>
-<!-- //Projects -->
 
-	
-<!--/Partners-->
+
 <section class="partners py-5" id="partners">
 	<div class="container py-md-3">
 		<h3 class="heading mb-5">Redes Sociales</h3>
@@ -256,31 +247,30 @@
 			<div class="sponsers-icon text-center">
 				<ul class="list-unstyled partners-icon row">
 					<li class="col-md-2 col-4 border-right mt-md-0 mt-3">
-						<span class="fab fa-pinterest" id="pinterest" aria-hidden="true"></span>
+						<a target="_blank" href="https://www.pinterest.es/"><span class="fab fa-pinterest" id="pinterest" aria-hidden="true"></span></a>
 					</li>
 					<li class="col-md-2 col-4 border-right mt-md-0 mt-3">
-						<span class="fab fa-instagram" id="instagram" aria-hidden="true"></span>
+						<a target="_blank" href="https://www.instagram.com/?hl=es"><span class="fab fa-instagram" id="instagram" aria-hidden="true"></span></a>
 					</li>
 					<li class="col-md-2 col-4 mt-md-0 mt-3">
-						<span class="fab fa-youtube" id="youtube" aria-hidden="true"></span>
+						<a target="_blank" href="https://www.youtube.com/?gl=ES&hl=es"><span class="fab fa-youtube" id="youtube" aria-hidden="true"></span></a>
 					</li>
 					<li class="col-md-2 col-4">		
-						<span class="fab fa-twitter" id="twitter" aria-hidden="true"></span>
+						<a target="_blank" href="https://twitter.com/?lang=es"><span class="fab fa-twitter" id="twitter" aria-hidden="true"></span></a>
 					</li>
 					<li class="col-md-2 col-4 border-left border-right">
-						<span class="fab fa-facebook-f" id="facebook" aria-hidden="true"></span>
+						<a target="_blank" href="https://es-es.facebook.com/"><span class="fab fa-facebook-f" id="facebook" aria-hidden="true"></span></a>
 					</li>
 					<li class="col-md-2 col-4 border-right">
-						<span class="fab fa-github" id="github" aria-hidden="true"></span>
+						<a target="_blank" href="https://github.com"><span class="fab fa-github" id="github" aria-hidden="true" ></span></a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
-<!-- //Partners -->
 
-<!-- footer -->
+
 <footer class="footer-emp-w3ls py-5">
 	<div class="container pt-lg-3">
 		<div class="row footer-top">
@@ -295,12 +285,12 @@
 				<h3 class="footer-title text-uppercase mb-4">Noticias</h3>
 				<div class="contact-info">
 					<div class="footer-style-w3ls">
-						<h4 class="mb-2"><span class="fa mr-1 fa-twitter"></span> Desarrollo de un grán proyecto</h4>
+						<h4 class="mb-2"><span class="far fa-newspaper"></span> Desarrollo de un grán proyecto</h4>
 						<p>Comenzamos a desarrollar el proyecto, fase de ideas y de desarrollo</p>
 						<p class="date">Enero-Febrero</p>
 					</div>
 					<div class="footer-style-w3ls mt-3">
-						<h4 class="mb-2"><span class="fa mr-1 fa-twitter"></span> Final del proyecto</h4>
+						<h4 class="mb-2"><span class="far fa-newspaper"></span> Final del proyecto</h4>
 						<p>Nuestro proyecto a sido realizado con éxito</p>
 						<p class="date">Junio</p>
 					</div>
@@ -333,6 +323,9 @@
 						<a class="" href="#about"> Acerca de nosotros</a>
 					</li>
 					<li>
+						<a class="" href="">Editor</a>
+					</li>
+					<li>
 						<a class="" href="#services">Que ofrecemos</a>
 					</li>
 					<li>
@@ -349,23 +342,20 @@
 		</div>
 	</div>
 </footer>
-<!-- //footer -->
 
-<!-- copyright -->
+
 <div class="copy-right-top border-top">
 	<p class="copy-right text-center py-4">&copy; 2019 Trinchera del Meme. Todos los derechos reservados | Desarrollado por Mass y May</p>
 </div>
-<!-- //copyright -->	
-	
-<!-- move top -->
+
+
 <div class="move-top text-right">
 	<a href="#home" class="move-top"> 
 		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
 	</a>
 </div>
-<!-- move top -->
 
-<!-- popup for login -->
+
 <div id="popup3" class="popup-effect">
 		<div class="popup">
 			<div class="login px-sm-4 mx-auto mw-100">
@@ -374,15 +364,12 @@
 					<div class="form-group">
 						<label class="mb-2">Correo Electrónico</label>
 						<input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
-						<!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required=""> -->
 					</div>
 					<div class="form-group">
 						<label class="mb-2">Contraseña</label>
 						<input type="password" name="clave"  class="form-control" id="clave" placeholder="Clave">
-						<!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required=""> -->
 					</div>
 					<input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1">
-					<!-- <button type="submit" class="btn btn-primary submit mt-2">Inicia Sesíon</button> -->
 					<p class="text-center mt-2">
 						<a href="registro.php">¿No tienes cuenta? Registrate Aquí.</a>
 					</p>
@@ -392,41 +379,7 @@
 			<a class="close" href="#">&times;</a>
 		</div>
 	</div>
-	<!-- //popup for login -->
 	
-	<!-- popup for register -->
-	<!-- <div id="popup4" class="popup-effect">
-		<div class="popup">
-			<div class="login px-sm-4 mx-auto mw-100">
-				<h5 class="text-center mb-4">Register Now</h5>
-				<form action="#" method="post">
-					<div class="form-group">
-						<label>Full Name</label>
-						<input type="text" class="form-control" id="validationDefault01" placeholder="" required="">
-					</div>
-					<div class="form-group">
-						<label>Email Address</label>
-						<input type="email" class="form-control" id="validationDefault02" placeholder="" required="">
-					</div>
-					<div class="form-group">
-						<label class="mb-2">Password</label>
-						<input type="password" class="form-control" id="password1" placeholder="" required="">
-					</div>
-					<div class="form-group">
-						<label>Confirm Password</label>
-						<input type="password" class="form-control" id="password2" placeholder="" required="">
-					</div>
-	
-					<button type="submit" class="btn btn-primary submit">Register</button>
-					<p class="text-center mt-3">
-						<a href="#">By clicking Register, I agree to your terms</a>
-					</p>
-				</form>
-			</div>
-			<a class="close" href="#">&times;</a>
-		</div>
-	</div> -->
-	<!-- //popup for register -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/funciones.js" type="text/javascript"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>

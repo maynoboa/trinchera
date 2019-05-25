@@ -33,6 +33,12 @@ a:hover {
     text-decoration: none;
 }
 
+#move-menu{
+    position: fixed;
+	top: 0;
+	background: rgba(0, 77, 255, 0.5);
+}
+
 input[type="button"],
 input[type="submit"],
 input[type="text"],
@@ -537,8 +543,7 @@ li > a:only-child:after { content: ''; }
     font-size: 16px;
     color: #777;
 }
-.about-img img{
-}
+
 .about-left h4 {
     font-size: 40px;
     font-weight: 600;
@@ -624,6 +629,7 @@ ul.ners-icon li span.fa {
 
 #twitter, #facebook, #github, #pinterest, #instagram, #youtube{
 	font-size: 2.5rem;
+	cursor: pointer;
 }
 
 #twitter{

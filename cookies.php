@@ -22,30 +22,29 @@
 </head>
 <body>
 
-<header class="py-4">
+<header class="py-4" id="move-menu">
 	<div class="container">
 			<div id="logo">
-				<h1> <a href="index.html"><span aria-hidden="true"></span> La Trinchera del Meme</a></h1>
+				<h1> <a href="main.php"><span aria-hidden="true"></span> La Trinchera del Meme</a></h1>
 			</div>
-		<!-- nav -->
 		<nav class="d-lg-flex">
 
 			<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-2 ml-auto">
 				<li class=""><a href="main.php">Inicio</a></li>
-                <li class=""><a href="#about">Acerca de</a></li>
+                <li class=""><a href="main.php#about">Acerca de</a></li>
                 <li class=""><a href="index.php">Inicio Seguro</a></li>
+				<li><a href="">Editor</a></li>
 				<li class="">
-				<!-- First Tier Drop Down -->
 				<label for="drop-2" class="toggle">Más <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
 				<a href="#">Más <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 				<input type="checkbox" id="drop-2"/>
 				<ul class="inner-ul">
-					<li><a href="#process">Proceso de Mercado</a></li>
-					<li><a href="#portfolio">Memes más destacados</a></li>
-				    <li><a href="#partners">Redes Sociales</a></li>
-                    <li><a href="cookies.php">Información Cookies</a></li>
+					<li><a href="main.php#process">Proceso de Mercado</a></li>
+					<li><a href="main.php#memes">Memes más destacados</a></li>
+				    <li><a href="main.php#partners">Redes Sociales</a></li>
+                    <li><a href="cookies.sphp">Información Cookies</a></li>
 				</ul>
 				</li>
 			</ul>
@@ -54,9 +53,9 @@
 			</div>
 		</nav>
 		<div class="clear"></div>
-		<!-- //nav -->
 	</div>
 </header>
+
 
 <div class="banner2" id="home">
 	<div class="container">
@@ -76,6 +75,7 @@
 		</div>
 	</div>
 </div>
+
 
 <section class="about py-5" id="about_cookies">
 	<div class="container py-lg-5 py-sm-3">
@@ -98,6 +98,7 @@
 	</div>
 </section>
 
+
 <section class="about py-5" id="about">
 	<div class="container py-lg-5 py-sm-3">
 		<div class="row">
@@ -107,7 +108,7 @@
 			<div class="col-lg-5 col-md-7 about-text">
 				<h3>Cumplimiento de normas de Google</h3>
 				<p class="mt-3">Tenemos la oportunidad de poner estas cookies, pero esto se debe comprobar en Google Analystics.</p>
-				<p class="mt-2">Recogemos los datos necesarios para cumplir estas normas, y de que no haya ningún tipo de problema. Nos aseguramos de la privacidad de los usuarios.</p>
+				<p class="mt-2">Recogemos los datos necesarios para cumplir estas normas, y de que no haya ningún tipo de problema. Y nos aseguramos de la privacidad de los usuarios.</p>
 			</div> 
             <div class="col-lg-3 about-left">	
 				<h3 class="heading mb-lg-5 mb-4">Normas Google</h3>
@@ -115,6 +116,7 @@
 		</div>
 	</div>
 </section>
+
 
 <footer class="footer-emp-w3ls py-5">
 	<div class="container pt-lg-3">
@@ -130,12 +132,12 @@
 				<h3 class="footer-title text-uppercase mb-4">Noticias</h3>
 				<div class="contact-info">
 					<div class="footer-style-w3ls">
-						<h4 class="mb-2"><span class="fa mr-1 fa-twitter"></span> Desarrollo de un grán proyecto</h4>
+						<h4 class="mb-2"><span class="far fa-newspaper"></span> Desarrollo de un grán proyecto</h4>
 						<p>Comenzamos a desarrollar el proyecto, fase de ideas y de desarrollo</p>
 						<p class="date">Enero-Febrero</p>
 					</div>
 					<div class="footer-style-w3ls mt-3">
-						<h4 class="mb-2"><span class="fa mr-1 fa-twitter"></span> Final del proyecto</h4>
+						<h4 class="mb-2"><span class="far fa-newspaper"></span> Final del proyecto</h4>
 						<p>Nuestro proyecto a sido realizado con éxito</p>
 						<p class="date">Junio</p>
 					</div>
@@ -162,22 +164,22 @@
 				<h3 class="footer-title text-uppercase mb-4">Quick Links</h3>
 				<ul class="links list-unstyled">
 					<li>
-						<a class="" href="#home"> Home</a>
+						<a class="" href="main.php#home"> Home</a>
 					</li>
 					<li>
-						<a class="" href="#about"> Acerca de nosotros</a>
+						<a class="" href="main.php#about"> Acerca de nosotros</a>
 					</li>
 					<li>
-						<a class="" href="#services">Que ofrecemos</a>
+						<a class="" href="">Editor</a>
 					</li>
 					<li>
-						<a class="" href="#process">Mercado</a>
+						<a class="" href="main.php#services">Que ofrecemos</a>
 					</li>
 					<li>
-						<a class="" href="#portfolio">Portfolio</a>
+						<a class="" href="main.php#process">Mercado</a>
 					</li>
 					<li>
-						<a class="" href="#memes">Memes más destacados</a>
+						<a class="" href="main.php#memes">Memes más destacados</a>
 					</li>
 					<li>
 						<a class="" href="cookies.php">Normas y cookies</a>
@@ -187,21 +189,42 @@
 		</div>
 	</div>
 </footer>
-<!-- //footer -->
 
-<!-- copyright -->
+
 <div class="copy-right-top border-top">
 	<p class="copy-right text-center py-4">&copy; 2019 Trinchera del Meme. Todos los derechos reservados | Desarrollado por Mass y May</p>
 </div>
-<!-- //copyright -->	
-	
-<!-- move top -->
+
+
 <div class="move-top text-right">
 	<a href="#home" class="move-top"> 
 		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
 	</a>
 </div>
-<!-- move top -->
+
+
+<div id="popup3" class="popup-effect">
+		<div class="popup">
+			<div class="login px-sm-4 mx-auto mw-100">
+				<h5 class="text-center mb-4">Inicia sesíon</h5>
+				<form method="post">
+					<div class="form-group">
+						<label class="mb-2">Correo Electrónico</label>
+						<input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuario">
+					</div>
+					<div class="form-group">
+						<label class="mb-2">Contraseña</label>
+						<input type="password" name="clave"  class="form-control" id="clave" placeholder="Clave">
+					</div>
+					<input type="button" value="Iniciar Sesión" class="btn btn-lg btn-primary btn-block pad" id="b1">
+					<p class="text-center mt-2">
+						<a href="registro.php">¿No tienes cuenta? Registrate Aquí.</a>
+					</p>
+				</form>
+			</div>
+			<a class="close" href="#">&times;</a>
+		</div>
+	</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/funciones.js" type="text/javascript"></script>

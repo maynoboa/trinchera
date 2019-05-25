@@ -364,7 +364,7 @@ a,
 }
 
 .signup__container_2{
-  height: 43rem;
+  height: 45rem;
 }
 
 .signup__overlay {
@@ -632,3 +632,7 @@ label {
 	top: 45%;
 	width: 25px;
 } 
+
+.ocultar_cerrar{
+  display: none;
+}
