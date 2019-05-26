@@ -2,9 +2,9 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<link rel="stylesheet" href="cajameme.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <!-- <button class="show_img">mostrar</button> -->
@@ -30,7 +30,7 @@
                     <div class="upload-btn-wrapper">
                         <button class="btn">
                         <i class="fas fa-upload"></i>    
-                        subir foto</button>
+                        Subir foto</button>
                         <input type='file' onchange="readURL(this);" />
                     </div>
                     <div class="cajaimg">
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                               
-                    <div>
+                    <div class="ico_subir_bajar">
                         <img id="aumentar" class="icon" src="mas.png" alt="your image">
                         <img id="disminuir" class="icon" src="resta.png">
                     </div>

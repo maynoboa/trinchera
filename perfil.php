@@ -5,7 +5,7 @@
         <title>Autenticación Multinivel</title>
         <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
 
@@ -13,20 +13,41 @@
     <body>
         <div class="contenedor">        
             <?php require 'seguridad-global-2.php'; ?>
-            <div class="up2">
-                    <div class="saludo2"><a href="acceso-aceptado-2.php"> 
-                        <img src="img/logo.png" class="logo2" alt=""> 
-                    </div>                    
-                    <div class="cerrarSesion2">
-                        <div class="cuadro2"> <a href="perfil.php">
-                            <div class="fotoper2"><img src="<?php echo $_SESSION["img"]?>" class="fotoper3" ></div>
-                            <div><?php echo $_SESSION["no_usu"] ?></div>
-                        </div>   
-                        <div>
-                            <a href="inicio_sesion.php">Cerrar Sesion</a>
-                        </div>                                         
-                    </div>                  
-            </div> 
+            <div class="up">
+              <div class="encabezado-red">
+                    <div class="saludo"><a href="acceso-aceptado-2.php"><img src="img/logo.png" class="logo" alt=""></div>
+                    <div class="cerrarSesion">
+                            <div class="cuadro"> <a href="perfil.php">
+                            <img src="<?php echo $_SESSION["img"]?>"  class="fotoper"><?php echo $_SESSION["no_usu"]?>
+                            </div>
+                    <a href="index.php" class="ocultar_cerrar">Cerrar Sesión</a>    
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2"
+                    style="margin-right: 3%; margin-top: 1%">
+                    Cerrar sesión
+                    </button> 
+                    </div>
+                    </div>                
+              </div>
+
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                            ¿Estás seguro de cerrar la sesión?. Se te redireccionará a la página principal.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                              <button type="button" class="btn btn-primary" onclick="location.href='index.php'">Cerrar sesíon</button>
+                            </div>
+                          </div>
+                  </div>
+            </div>
             <div class="informacion">
                 <div class="infoleft">
                     <img src="<?php echo $_SESSION["img"]?>" class="img_perf resultadoo" width=250 height=250 >
