@@ -20,7 +20,7 @@
                             <div class="cuadro"> <a href="perfil.php">
                             <img src="<?php echo $_SESSION["img"]?>"  class="fotoper"><?php echo $_SESSION["no_usu"]?>
                             </div>
-                    <a href="main.php" class="ocultar_cerrar">Cerrar Sesión</a>    
+                    <a href="index.php" class="ocultar_cerrar">Cerrar Sesión</a>    
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Cerrar sesión
                     </button> 
@@ -41,7 +41,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                              <button type="button" class="btn btn-primary" onclick="location.href='main.php'">Cerrar sesíon</button>
+                              <button type="button" class="btn btn-primary" onclick="location.href='index.php'">Cerrar sesíon</button>
                             </div>
                           </div>
                         </div>

@@ -14,7 +14,7 @@
                     <div class="cerrarSesion">
                             <div class="cuadro">
                     </div>
-                    <a href="index.php">Cerrar Sesion</a></div>                   
+                    <a href="inicio_sesion.php">Cerrar Sesion</a></div>                   
                     </div>
             <div id="columnaIzq">
                 <h4 class="puedesSeguir">Puedes bloquear</h4>

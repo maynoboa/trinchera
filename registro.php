@@ -89,11 +89,6 @@
         </select>
       </div>
       <br>
-      <div class="division">
-        <label for="username">Imagen de Perfil</label>
-          <input type="file" name="img"  class="form-control" id="img" >
-      </div>
-      <br>
         <div id="resultado_3" style="margin: 2px;">&nbsp;</div>
             <div class="m-t-lg">
               <ul class="list-inline">
@@ -103,7 +98,7 @@
                         padding: 8% 13% 8% 13%; ESTO ES PARA EL BOTON-->
                   </li>
                   <br><br>
-                  <p class="titulo_registro">Volver atras <a href="index.php" style="color:#FF0000">Aquí</a></p>
+                  <p class="titulo_registro">Volver atras <a href="inicio_sesion.php" style="color:#FF0000">Aquí</a></p>
               </ul>
             </div>
     </form> 

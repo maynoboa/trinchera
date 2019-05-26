@@ -23,7 +23,7 @@
                             <div><?php echo $_SESSION["no_usu"] ?></div>
                         </div>   
                         <div>
-                            <a href="index.php">Cerrar Sesion</a>
+                            <a href="inicio_sesion.php">Cerrar Sesion</a>
                         </div>                                         
                     </div>                  
             </div> 

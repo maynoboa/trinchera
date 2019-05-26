@@ -25,25 +25,25 @@
 <header class="py-4" id="move-menu">
 	<div class="container">
 			<div id="logo">
-				<h1> <a href="main.php"><span aria-hidden="true"></span> La Trinchera del Meme</a></h1>
+				<h1> <a href="index.php"><span aria-hidden="true"></span> La Trinchera del Meme</a></h1>
 			</div>
 		<nav class="d-lg-flex">
 
 			<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
 			<input type="checkbox" id="drop" />
 			<ul class="menu mt-2 ml-auto">
-				<li class=""><a href="main.php">Inicio</a></li>
-                <li class=""><a href="main.php#about">Acerca de</a></li>
-                <li class=""><a href="index.php">Inicio Seguro</a></li>
+				<li class=""><a href="index.php">Inicio</a></li>
+                <li class=""><a href="index.php#about">Acerca de</a></li>
+                <li class=""><a href="inicio_sesion.php">Inicio Seguro</a></li>
 				<li><a href="">Editor</a></li>
 				<li class="">
 				<label for="drop-2" class="toggle">Más <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
 				<a href="#">Más <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 				<input type="checkbox" id="drop-2"/>
 				<ul class="inner-ul">
-					<li><a href="main.php#process">Proceso de Mercado</a></li>
-					<li><a href="main.php#memes">Memes más destacados</a></li>
-				    <li><a href="main.php#partners">Redes Sociales</a></li>
+					<li><a href="index.php#process">Proceso de Mercado</a></li>
+					<li><a href="index.php#memes">Memes más destacados</a></li>
+				    <li><a href="index.php#partners">Redes Sociales</a></li>
                     <li><a href="cookies.sphp">Información Cookies</a></li>
 				</ul>
 				</li>
@@ -164,22 +164,22 @@
 				<h3 class="footer-title text-uppercase mb-4">Quick Links</h3>
 				<ul class="links list-unstyled">
 					<li>
-						<a class="" href="main.php#home"> Home</a>
+						<a class="" href="index.php#home"> Home</a>
 					</li>
 					<li>
-						<a class="" href="main.php#about"> Acerca de nosotros</a>
+						<a class="" href="index.php#about"> Acerca de nosotros</a>
 					</li>
 					<li>
 						<a class="" href="">Editor</a>
 					</li>
 					<li>
-						<a class="" href="main.php#services">Que ofrecemos</a>
+						<a class="" href="index.php#services">Que ofrecemos</a>
 					</li>
 					<li>
-						<a class="" href="main.php#process">Mercado</a>
+						<a class="" href="index.php#process">Mercado</a>
 					</li>
 					<li>
-						<a class="" href="main.php#memes">Memes más destacados</a>
+						<a class="" href="index.php#memes">Memes más destacados</a>
 					</li>
 					<li>
 						<a class="" href="cookies.php">Normas y cookies</a>

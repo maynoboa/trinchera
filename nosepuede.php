@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Su usuario esta bloqueado</h1>
-    <div class="cerrarSesion"><a href="index.php">regresar a login</a></div>
+    <div class="cerrarSesion"><a href="inicio_sesion.php">regresar a login</a></div>
 </body>
 </html>

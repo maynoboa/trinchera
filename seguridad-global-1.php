@@ -5,8 +5,8 @@ if (!isset($_SESSION)) {
 }
 /* COMPROBACIÓN DE QUE EL USUARIO ESTÁ AUTENTIFICADO EN SU CORRESPONDIENTE NIVEL */
 if ($_SESSION["autentificado"] != "si" || $_SESSION["ni_usu"] != 1) {
-    /* SI EL USUARIO NO ESTÁ AUTENTICADO SE LE REDIRIGE A index.php */
-    header("Location: index.php");
+    /* SI EL USUARIO NO ESTÁ AUTENTICADO SE LE REDIRIGE A inicio_sesion.php */
+    header("Location: inicio_sesion.php");
     /* Y SE SALE DEL SCRIPT */
     exit();
 }
