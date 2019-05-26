@@ -1,0 +1,160 @@
+*{
+  margin:0;
+  padding: 0;
+}
+body{
+  background-color: #d1e1e6;
+}
+.circulo{
+    width: 300px;
+    height: 300px;
+}
+.box{
+  cursor: pointer;
+}
+ .borde{
+    /* max-width:800px;
+    max-height:500px; */
+    max-width: 100%;
+    /* max-height: 100%; */
+    /* border: 1px solid; */
+    display: flex;
+    margin: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    /* justify-content: center; */
+} 
+img{
+    max-width:100%;
+    max-height: 100%;
+  }
+  input[type=file]{
+  padding:10px;
+  background:#2d2d2d;}
+  .caja{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+#editor{
+    max-width: 100%;
+    /* max-height: 600px; */
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    /* top: 32px; */
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.iconos{
+  flex: 1;
+}
+.edit{
+    /* margin-top: 13px; */
+    position: absolute;
+    /* top: 49px; */
+    /* max-width:  373px; */
+    /* border: 1px solid; */
+    width: 31%;
+}
+
+.hide{
+  display: flex;
+    flex-direction: column;
+    padding: 10px;
+} 
+.icon{
+  width: 40px;
+  height: 40px;
+}
+.texto {
+  width: 97%;
+    height: 50px;
+}
+/*-------------upload foto ------------------*/
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.blah{
+    width: 100%;
+    height: 100%;
+}
+
+/*----modal------*/
+ #previewImage {
+   
+  border: 1px solid;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: center;
+  padding: 28px;
+  /* display: none; */
+} 
+/* #screen{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
+}
+#previewImage {
+  width: 33.333%;
+  top: 20%;
+  left: 33.3333%;
+  background: white;
+  z-index: 2;
+}  */
+/* paleta de color-*/
+/*----descargar-----*/
+
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #333333;
+}
+
+.boton {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: #318aac;
+  border: 2px solid;
+  border-color: #318aac;
+  position: relative;
+}
+.boton:before {
+  content:"";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
+}
+.boton:hover:before {
+width: 100%;
+}
+.disabled {
+  text-decoration: none;
+}
