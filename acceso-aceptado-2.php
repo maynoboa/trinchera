@@ -20,31 +20,32 @@
                             <div class="cuadro"> <a href="perfil.php">
                             <img src="<?php echo $_SESSION["img"]?>"  class="fotoper"><?php echo $_SESSION["no_usu"]?>
                             </div>
-                    <a href="main.php">Cerrar Sesión</a>    
+                    <a href="index.php" class="ocultar_cerrar">Cerrar Sesión</a>    
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Cerrar sesión
                     </button> 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      ¿Estás seguro de cerrar la sesión?. Se te redireccionará a la ventana de inicio de sesión.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-        <button type="button" class="btn btn-primary" onclick="location.href='main.php'">Cerrar sesíon</button>
-      </div>
-    </div>
-  </div>
-</div>
                    </div>                
-                    </div>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                            ¿Estás seguro de cerrar la sesión?. Se te redireccionará a la ventana de inicio de sesión.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                              <button type="button" class="btn btn-primary" onclick="location.href='index.php'">Cerrar sesíon</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
             <div id="columnaIzq">
                 
                 <!-- <h4 class="puedesSeguir">Puedes seguir</h4> -->

@@ -33,6 +33,12 @@ a:hover {
     text-decoration: none;
 }
 
+#move-menu{
+    position: fixed;
+	top: 0;
+	background: rgba(0, 77, 255, 0.73);
+}
+
 input[type="button"],
 input[type="submit"],
 input[type="text"],
@@ -383,6 +389,13 @@ li > a:only-child:after { content: ''; }
     z-index: 1;
 }
 
+.banner2 {
+    background-image:url(../images/fondo8.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
 
 .banner-info-grid h2 {
     color: #fff;
@@ -515,6 +528,10 @@ li > a:only-child:after { content: ''; }
     background-color: rgb(89, 181, 206);
 }
 
+#about_cookies{
+	background-color: #b3d7ff;
+}
+
 .about-text h3{
     font-size: 27px;
     font-weight: 600;
@@ -526,8 +543,7 @@ li > a:only-child:after { content: ''; }
     font-size: 16px;
     color: #777;
 }
-.about-img img{
-}
+
 .about-left h4 {
     font-size: 40px;
     font-weight: 600;
@@ -613,6 +629,7 @@ ul.ners-icon li span.fa {
 
 #twitter, #facebook, #github, #pinterest, #instagram, #youtube{
 	font-size: 2.5rem;
+	cursor: pointer;
 }
 
 #twitter{
@@ -1105,6 +1122,34 @@ a.move-top span{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #D62929;
 }
+#overbox3 {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999999;
+	display: block;
+	font-family: 'Cabin', sans-serif;
+}
+#infobox3 {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    height: 58px;
+    width: 100%;
+    text-align:center;
+    background-color: #eeeeee;
+}
+#infobox3 p {
+    line-height:58px;
+    font-size:12px;
+    text-align:center;
+}
+#infobox3 p a {
+    margin-right:5px;
+    text-decoration: underline;
+}
+
 /*-- Responsive design --*/
 
 @media(max-width:1440px) {
@@ -1191,6 +1236,10 @@ a.move-top span{
 	.login-icon {
 		position: absolute;
 		right: 10%;
+	}
+	.login-icon a{
+		margin: 2.5em 6em 0em 0em;
+    	padding: 0.4em 0.7em 0.2em 1em;
 	}
 	.information p {
 		font-size: 15px;
