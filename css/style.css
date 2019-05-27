@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 html,
 body {
     margin: 0;
@@ -75,10 +70,6 @@ ul {
     padding: 0;
 }
 
-
-/* header */
-
-/* CSS Document */
 header {
     position: absolute;
     z-index: 9;
@@ -90,7 +81,6 @@ header {
 	display: none;
 }
 
-/* Giving a background-color to the nav container. */
 nav { 
 	margin:0;
 	padding: 0;
@@ -119,18 +109,12 @@ div#logo {
 	
 }
 
-
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-
 nav:after {
 	content:"";
 	display:table;
 	clear:both;
 }
 
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
 nav ul {
 	float: right;
 	padding:0;
@@ -139,14 +123,11 @@ nav ul {
 	position: relative;
 	}
 	
-/* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
 	display:inline-block;
-	float: left;
 	}
 
-/* Styling the links */
 nav a {
     color: #fff;
     text-transform: capitalize;
@@ -158,7 +139,6 @@ nav a {
 
 nav ul li ul li:hover { background: #f8f9fa; }
 
-/* Background color change on Hover */
 nav a:hover { 
 	color: #FFF;	
 }
@@ -169,23 +149,18 @@ nav ul.inner-ul li a:hover {
 	color: #333;	
 }
 
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
 nav ul ul {
 	display: none;
 	position: absolute; 
-	/* has to be the same number as the "line-height" of "nav a" */
 	top: 30px; 
     background: #fff;
     padding: 10px;
 }
 	
-/* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
 }
 	
-/* Fisrt Tier Dropdown */
 nav ul ul li {
 	width:170px;
 	float:none;
@@ -198,24 +173,16 @@ nav ul ul li a {
     display: block;
 }
 
-/* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
 nav ul ul ul li {
 	position: relative;
 	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
 	left:170px; 
 }
 
 	
-/* Change ' +' in order to change the Dropdown symbol */
 li > a:only-child:after { content: ''; }
 
 
-/* Media Queries
---------------------------------------------- */
 
 @media all and (max-width : 800px) {
 	nav { 
@@ -240,14 +207,11 @@ li > a:only-child:after { content: ''; }
 		color: #333;
 	}
 
-	/* Hide the navigation menu by default */
-	/* Also hide the  */
 	.toggle + a,
 	.menu {
 		display: none;
 	}
 
-	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
 		padding: 8px 15px;
@@ -274,7 +238,6 @@ li > a:only-child:after { content: ''; }
 		background-color: #fff;
 	}
 
-	/* Display Dropdown when clicked on Parent Lable */
 	[id^=drop]:checked + ul {
 		display: block;
 		background: #fff;
@@ -283,7 +246,6 @@ li > a:only-child:after { content: ''; }
 		width: 100%;
 	}
 
-	/* Change menu item's width to 100% */
 	nav ul li {
 		display: block;
 		width: 100%;
@@ -323,21 +285,17 @@ li > a:only-child:after { content: ''; }
 	ul.inner-ul{
 		padding: 0!important;
 	}
-	/* Hide Dropdowns by Default */
 	nav ul ul {
 		float: none;
 		position:static;
 		color: #ffffff;
-		/* has to be the same number as the "line-height" of "nav a" */
 	}
 		
-	/* Hide menus on hover */
 	nav ul ul li:hover > ul,
 	nav ul li:hover > ul {
 		display: none;
 	}
 		
-	/* Fisrt Tier Dropdown */
 	nav ul ul li {
 		display: block;
 		width: 100%;
@@ -346,7 +304,6 @@ li > a:only-child:after { content: ''; }
 
 	nav ul ul ul li {
 		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
 
 	}
 
@@ -377,10 +334,6 @@ li > a:only-child:after { content: ''; }
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
 }
-/*-- //header --*/
-
-
-/*--/banner-info--*/
 
 .banner {
     background-image:url(../images/fondo3.jpg);
@@ -444,9 +397,6 @@ li > a:only-child:after { content: ''; }
     font-size: 20px;
 }
 
-/*-- //banner --*/
-
-/*-- popup --*/
 .popup-effect {
     position: fixed;
     top: 0;
@@ -521,9 +471,6 @@ li > a:only-child:after { content: ''; }
     letter-spacing: .5px;
 }
 
-/*-- //popup --*/
-
-/*-- about --*/
 #about{
     background-color: rgb(89, 181, 206);
 }
@@ -554,9 +501,7 @@ li > a:only-child:after { content: ''; }
     color: #666;
     font-weight: normal;
 }
-/*-- about --*/
 
-/*-- why choose us --*/
 h2.heading,h3.heading {
     font-size: 45px;
     color: #333;
@@ -612,9 +557,7 @@ h2.heading,h3.heading {
 	background: #fff;
 	border-radius: 10%;
 }
-/*-- why choose us --*/
 
-/*-- ners --*/
 ul.ners-icon li span.fa {
     font-size: 3em;
     color: #eee;
@@ -656,9 +599,6 @@ ul.ners-icon li span.fa {
 	color: #c4302b
 }
 
-/*-- //ners --*/
-
-/*-- offered services --*/
 
 h4.w3layouts_pvt-head {
 	text-transform: capitalize;
@@ -716,9 +656,6 @@ a.btn-w3layouts_pvt {
     font-size: 16px;
     color: #777;
 }
-/* //offered services */
-
-/*-- services page --*/
 
 #services{
     background-image:url(../images/fondo4.jpg);
@@ -741,15 +678,10 @@ a.btn-w3layouts_pvt {
 	box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
 }
 
-/*-- //services page --*/
-
-/*-- projects --*/
-
 .gal-img {
     margin-bottom: 1em;
     padding-right: 0px;
 }
-/* popup */
 .pop-overlay {
     position: fixed;
     top: 0px;
@@ -792,54 +724,6 @@ a.btn-w3layouts_pvt {
     color: #000;
 }
 
-/* //popup */
-/*-- //projects --*/
-
-/*-- Testimonials --*/
-.testi {
-    background: url(../images/bg.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.testimonials blockquote {
-    background: #fff none repeat scroll 0 0;
-    border: medium none;
-    color: #666;
-    display: block;
-    font-size: 14px;
-    padding: 30px 30px;
-    position: relative;
-}
-blockquote span.fa {
-    color: #009688;
-}
-.testimonials .carousel-info img {
-    border-radius: 150px !important;
-    height: 80px;
-    width: 80px;
-}
-.testimonials .carousel-info {
-    overflow: hidden;
-}
-.testimonials .carousel-info img {
-    margin-right: 15px;
-}
-.testimonials .carousel-info span {
-    display: block;
-}
-.testimonials span.testimonials-name {
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 15px 0 0px;
-}
-.testimonials span.testimonials-post {
-    color: #eee;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-/*-- //testimonials --*/
 
 
 /*-- offered services bottom --*/
@@ -897,7 +781,6 @@ ul.links li a {
 .contact-info h4 i {
     color: #999;
 }
-/* quick links */
 ul.links li a {
     font-size: 15px;
     letter-spacing: 1px;
@@ -914,9 +797,6 @@ ul.links li a:hover,
 	background-color: rgb(157, 215, 215);
 }
 
-/* //quick links */
-
-/* copyright */
 .copy-right-top {
     background: #212020;
 }
@@ -938,18 +818,11 @@ ul.links li a:hover,
     border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-/* copyright */
-/* //footer */
-
-/*- inner banner --*/
 
 .inner-banner {
     height: 250px;
 }
 
-/*- inner banner --*/
-
-/*-- Contact page --*/
 .contact_right input[type="text"], .contact_right input[type="email"], .contact_right textarea {
     outline: none;
     padding: 12px 0;
@@ -1019,11 +892,6 @@ ul.links li a:hover,
 .contact_right,.contact_border{
     border: 2px dotted #b84592;
 }
-/*-- //Contact page --*/
-
-
-/*-- team --*/
-/* common styles for visual styles */
 
 .teamy_name {
     font-size: 20px;
@@ -1038,7 +906,6 @@ ul.links li a:hover,
     color: #6f6f6f;
     letter-spacing: 0.5px;
 }
-/* style 1 */
 
 .teamy_content,.teamy_back {
  text-align: center;
@@ -1073,8 +940,6 @@ ul.links li a:hover,
 .teamy_back-inner span.fa.fa-envelope-open:hover {
 	opacity:0.8;
 }
-/*-- //team --*/
-/*-- move top --*/
 
 .move-top {
     position: relative;
@@ -1101,11 +966,9 @@ a.move-top span{
     -ms-border-radius: 50px;
 }
 
-/*-- //move top --*/
 
 #style-2::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #F5F5F5;
 }
@@ -1119,7 +982,6 @@ a.move-top span{
 #style-2::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #D62929;
 }
 #overbox3 {
@@ -1150,7 +1012,6 @@ a.move-top span{
     text-decoration: underline;
 }
 
-/*-- Responsive design --*/
 
 @media(max-width:1440px) {
 }
@@ -1530,5 +1391,3 @@ a.move-top span{
 	}
 }
 
-
-/*-- //Responsive design --*/

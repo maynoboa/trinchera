@@ -94,8 +94,6 @@
               <ul class="list-inline">
                   <li>
                     <input type="button" value="Registrarse" class="btn btn-lg btn-primary btn-block pad" id="reg_usu">
-                        <!--margin: -10% 5% 0% 45%;
-                        padding: 8% 13% 8% 13%; ESTO ES PARA EL BOTON-->
                   </li>
                   <br><br>
                   <p class="titulo_registro">Volver atras <a href="inicio_sesion.php" style="color:#FF0000">Aquí</a></p>

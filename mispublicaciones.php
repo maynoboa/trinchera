@@ -46,6 +46,4 @@ if ($numeroRegistros) {
     }
 }
 else{echo 'No hay publicaciones';}
-//  $resultado->free();
-//   $mysqli->close();
 ?>

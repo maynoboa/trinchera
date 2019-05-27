@@ -12,14 +12,10 @@ if (move_uploaded_file($_FILES['file1']['tmp_name'], $archivo)){
 echo "Archivo subido correctamente.\n";
 $mysqli->query("UPDATE usu SET img='$archivo' WHERE id_usu=".$_SESSION['id_usu']);
 
-
-/* INICIO - Captura de los datos extras enviados junto con la imagen */
-/* echo $_POST['dato1']; */
-/* FIN - Captura de los datos extras enviados junto con la imagen */
 }
 else{
     switch ($_FILES['file1']['error']) {
-     case UPLOAD_ERR_OK: /* UPLOAD_ERR_OK: Archivo subido correctamente */
+     case UPLOAD_ERR_OK: 
      break;
      case UPLOAD_ERR_INI_SIZE:
      echo 'El fichero subido excede la directiva upload_max_filesize de php.ini.';

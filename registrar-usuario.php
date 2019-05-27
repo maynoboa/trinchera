@@ -9,16 +9,6 @@
 	$pais = $_POST["pais_usu"];
 	$sexo = $_POST["sex_usu"];
 
-	// $img = $_POST["img"]
-	// $nombre_imagen=$_FILES['img']['name'];
-	// $tipo_imagen=$_FILES['img']['type']; 
-	// $tamano_imagen=$_FILES['img']['size'];
-
-	// $carpeta_destino=$_SERVER['DOCUMENT_ROOT'].'/trinchera/img/';
-	// move_uploaded_file($_FILES['img']['tmp_name'],$carpeta_destino.$nombre_imagen);
-
-	//$fech_publ = strftime("%Y-%m-%d, time()");
-
     require_once ('conexion_bases.php');
 	$mysqli->set_charset("utf8");
 
@@ -33,6 +23,5 @@
 	}
 
     $resultado->free();
-    /* CIERRA LA CONEXIÓN */
     $mysqli->close();   
 ?>

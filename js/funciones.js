@@ -1,6 +1,5 @@
 $(document).ready(function () {
     $("#b1").click(function (event) {
-        /* SI ALGUNO DE LOS CAMPOS ESTÁ VACÍO NO SE REALIZA LA PETICIÓN A LA BASE DE DATOS */
         if ($("#usuario").val().trim().length === 0 || $("#clave").val().trim().length === 0) {
           $("#resultado").html("Indique Usuario y Clave.");
         }
@@ -13,20 +12,13 @@ $(document).ready(function () {
           function(json){
 
             if (json.v1 == "no") {
-                /* ACCESO DENEGADO */
                 $("#resultado").html("Usuario y/o clave incorrectos.")
             }
             else if (json.v3 == 0) {
-                /* ACCESO ACEPTADO.
-                 * SE REDIRIGE A acceso-aceptado-n.php
-                 * SIN DESTRUIR LAS VARIABLES DE SESIÓN  */
                 var paginaDestino="nosepuede.php";
                 window.location.href = paginaDestino;
             }
             else if (json.v1 == "si") {
-                /* ACCESO ACEPTADO.
-                 * SE REDIRIGE A acceso-aceptado-n.php
-                 * SIN DESTRUIR LAS VARIABLES DE SESIÓN  */
                 var paginaDestino="acceso-" + json.v2 + ".php";
                 window.location.href = paginaDestino;
             }
@@ -84,7 +76,6 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {    
- // $(".usu1").click(function (event) {
     $('body').on('click', '.usu1', function() {
         $.ajax({
             type: "POST",
@@ -105,7 +96,6 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {    
-   // $(".usu2").click(function (event) {
        
        $('body').on('click', '.usu2', function() {
            $.ajax({
@@ -138,7 +128,6 @@ $(document).ready(function () {
                 }
     	}).done(function (msg) {
         		$(".contenidoPublicacion").html(msg);
-        		// LIMPIEZA DE CONTROLES
         		$("#texto1").val("");
     	});
 	});
@@ -147,14 +136,6 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$("#botonpub1").click(function (event) {
         location.reload();
-    	// $.ajax({
-        // 		type: "POST",
-        // 		url: "actualizar.php"       		
-    	// }).done(function (msg) {
-        // 		$(".contenidoPublicacion").html(msg);
-        // 		// LIMPIEZA DE CONTROLES
-        // 		// $("#texto1").val("");
-    	// });
 	});
 });
 
@@ -178,7 +159,6 @@ $(document).ready(function () {
 	});
 });
 $(document).ready(function () {    
-    // $(".usu1").click(function (event) {
        $('body').on('click', '.usu3', function() {
            $.ajax({
                type: "POST",
@@ -213,45 +193,6 @@ $(document).ready(function () {
     }
 }
 
-   1
-   2
-   3
-   4
-   5
-   6
-   7
-   8
-   9
-   10
-   11
-   12
-   13
-   14
-   15
-   16
-   17
-   18
-   19
-   20
-   21
-   22
-   23
-   24
-   25
-   26
-   27
-   28
-   29
-   30
-   31
-   32
-   33
-   34
-   35
-   36
-   37
-   38
-   39
    function GetCookie(name) {
        var arg=name+"=";
        var alen=arg.length;
@@ -293,4 +234,3 @@ $(document).ready(function () {
    }
    
    
-  //-----------------like

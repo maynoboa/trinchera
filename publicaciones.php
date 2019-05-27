@@ -12,19 +12,12 @@ if ($numeroRegistros) {
     while ($fila = $resultado->fetch_assoc()) {
         $resultado2 = $mysqli->query("SELECT no_usu ,img from usu where id_usu=".$fila['id_usu']."");
  
-       // $resul = $mysqli->query("SELECT count(post) FROM likes WHERE usu=.$fila['id_pub']. and post=.$fila['id_pub'].");
-        //$resuss = $mysqli->query("SELECT * from pub");
-            // $likess = $query->num_rows;
+      
             while ($fila2 = $resultado2->fetch_assoc() ) {
                 $nombre=$fila2['no_usu'];
                 $img=$fila2['img'];
                 
             }
-            // $query = $mysqli->query("SELECT * FROM likes WHERE post = ".$fila['id_pub']." AND usuario = ".$fila['id_usu']." ");  
-            // while ($fila3 = $query->fetch_assoc() ) {
-            //         $id_lik=$fila3['id_lik'];
-            //         // $poust=$fila3['total'];
-            //     }
         if($fila['img_pub']==true){
             echo "
             <div id='".$fila['id_pub']."' class='contenidoConcreto'>
@@ -46,7 +39,6 @@ if ($numeroRegistros) {
             </div>";
         }
         else{
-          //EL PRIMER DIV HAY QUE ARREGLAR 
           $query = $mysqli->query("SELECT * FROM likes WHERE post = ".$fila['id_pub']." AND usuario = ".$fila['id_usu']." "); 
           $registrolikes = $query->num_rows;
                 if ($registrolikes==0) {
@@ -98,21 +90,5 @@ if ($numeroRegistros) {
     }
 }
 else{echo 'No hay publicaciones';}
-//  $resultado->free();
-//   $mysqli->close();
 ?>
 
- <!-- <img src='img/likes/como.png'> Me gusta  -->
-
- <!-- <ul class='list-inline'>
-                    
-                        <li>
-                            <div class='btn btn-default btn-xs like' id=".$fila['id_pub'].">
-                               me gusta
-                            </div> 
-                            <span id='likes_".$fila['id_pub']."'> 
-                                (".$fila['likes'].")
-                             </span>
-                        </li>
-                 
-                </ul> -->
