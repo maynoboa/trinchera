@@ -1,6 +1,6 @@
 <?php
 require 'seguridad-global-2.php';
-require_once ('con1.php');	
+require_once ('conexion_bases.php');	
 $mysqli = new mysqli($se, $us, $co, $bd);
 if ($mysqli->connect_errno) {
     printf("Error en la conexion: %s\n", $mysqli->connect_error);
@@ -36,7 +36,12 @@ if ($numeroRegistros) {
                     <div class='size'>publicado:".$fila['fe_pub']."
                     </div>
                     <img src=".$fila['img_pub']." class='imgpub'>
+                    
+                    </div>
+                    <div class='like' id='".$fila['id_pub']."'>
+                    <img src='img/likes/como.png'> Me gusta               
                 </div>
+                <span id='a_".$fila['id_pub']."'> </span>
                 
             </div>";
         }
@@ -60,7 +65,7 @@ if ($numeroRegistros) {
                             
                             </div>
                             <div class='like' id='".$fila['id_pub']."'>
-                                <img src='img/likes/como.png'> Me gusta pub                
+                                <img src='img/likes/como.png'> Me gusta               
                             </div>
                             <span id='a_".$fila['id_pub']."'> </span>
                         </div>
@@ -79,7 +84,7 @@ if ($numeroRegistros) {
                                 </div>                            
                             </div>
                             <div class='like' id='".$fila['id_pub']."'>
-                                <img class='nomegusta'  src='img/likes/corazon.png'> no me gusta pub               
+                                <img class='nomegusta'  src='img/likes/corazon.png'> no me gusta           
                             </div>
                             <span id='a_".$fila['id_pub']."'>  </span>            
                         </div>

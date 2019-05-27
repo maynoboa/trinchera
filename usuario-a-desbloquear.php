@@ -1,7 +1,7 @@
 <?php
 require 'seguridad-global-1.php';
 $id_us2=$_POST['id_us2'];
-require_once ('con1.php');	
+require_once ('conexion_bases.php');	
 $mysqli = new mysqli($se, $us, $co, $bd);
 
 if ($mysqli->connect_errno) {

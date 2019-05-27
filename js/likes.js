@@ -3,7 +3,7 @@ $(document).ready(function () {
 		var id = this.id; 
 		//obtiene el primer id del hijo de la id#+id
 		var ider = $('#'+id+ ' span').first().attr('id');
-		alert(1);
+		//alert(1);
     	$.ajax({
         		type: "POST",
 				url: "megusta.php",
@@ -32,7 +32,7 @@ $(".like1").click(function (event) {
 		var id = this.id; 
 		//obtiene el primer id del hijo de la id#+id
 		var ider = $('#'+id+ ' span').first().attr('id');
-		 alert(id);
+		 //alert(id);
     	$.ajax({
         		type: "POST",
 				url: "megusta.php",

@@ -35,7 +35,7 @@
 				<li class=""><a href="index.php">Inicio</a></li>
                 <li class=""><a href="index.php#about">Acerca de</a></li>
                 <li class=""><a href="inicio_sesion.php">Inicio Seguro</a></li>
-				<li><a href="">Editor</a></li>
+				<li><a target="_blank" href="editor-meme/editor.php">Editor</a></li>
 				<li class="">
 				<label for="drop-2" class="toggle">Más <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
 				<a href="#">Más <span class="fa fa-angle-down" aria-hidden="true"></span></a>

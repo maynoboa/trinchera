@@ -3,7 +3,7 @@
 require 'seguridad-global-2.php';
 $post=$_POST['id_like'];
 $usuario = $_SESSION['id_usu'];
-require_once ('con1.php');	
+require_once ('conexion_bases.php');	
 $mysqli = new mysqli($se, $us, $co, $bd);
 if ($mysqli->connect_errno) {
     printf("Error en la conexion: %s\n", $mysqli->connect_error);
@@ -45,9 +45,9 @@ if ($count == 0) {
 			
 		</div>	
 		<div class='like1' id='m_".$post."'>								
-			<img class='nomegusta'  src='img/likes/corazon.png'> no me gusta like
+			<img class='nomegusta'  src='img/likes/corazon.png'> no me gusta
 		</div>
-		<span id='a_".$post."'>()</span>            
+		<span id='a_".$post."'></span>            
  
 		
 	 ";
@@ -70,9 +70,9 @@ if ($count == 0) {
 			</div>	
 		</div>
 		<div class='like1' id='".$post."'>	
-			<img src='img/likes/como.png'> me gusta like
+			<img src='img/likes/como.png'> me gusta 
 		</div>	
-		<span id='a_".$post."'>()</span>            
+		<span id='a_".$post."'></span>            
 		"				
 			;
 	  

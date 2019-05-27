@@ -1,6 +1,6 @@
 <?php
 require 'seguridad-global-2.php';
-require_once ('con1.php');
+require_once ('conexion_bases.php');
 $mysqli->set_charset("utf8");
 $resultado = $mysqli->query("SELECT id_usu, no_usu,img from usu 
                             where id_usu not in (select id_us2 from seg

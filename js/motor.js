@@ -10,6 +10,7 @@ form.addEventListener('submit', function(e) {
  oRequest1.onload = function(oEvent) {
  if (oRequest1.status == 200) {
  oResultado1.innerHTML = oRequest1.responseText;
+ location.reload(true)
  }
  else {
  oResultado1.innerHTML = "Se ha producido un error: " + oRequest1.status;

@@ -72,11 +72,13 @@ a:link {
     background-color: rgb(36, 154, 244);
 }
 #columnaCen{
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-    padding: 5% 2% 5% 2%;
-    background-color: rgb(157,215,215);
+  float: left;
+  margin-top: 27px;
+  border-radius: 29px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5% 2% 5% 2%;
+  background-color: rgb(157,215,215);
 }
 #columnaDer{
     float: left;
@@ -90,6 +92,7 @@ a:link {
     float: left;
     width: 50%; 
     padding-bottom: 5%;   
+    margin: 0% 0% 3% 27%;
 }
 #queNosigo{
     clear: both;
@@ -103,7 +106,8 @@ a:link {
     clear: both;
     float: left;
     width: 50%;
-    padding-bottom: 5%;   
+    padding-bottom: 5%;  
+    margin: 1% 0% 3% 25%; 
 }
 #queSisigo{
     clear: both;
@@ -171,7 +175,7 @@ a:link {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #5cb85c;
+    
     float: left;
 }
 .bor{
@@ -204,9 +208,11 @@ a:link {
 .fotoper{
     width: 100%;   
     border-radius: 39%;
+    height: 100%;
 }
 .cuadro{
-    width: 7%;
+    width: 55px;
+    height: 50px;
     float: right;
     color: white;
     text-align: center;
@@ -581,7 +587,7 @@ label {
   max-height: 100%;
   position: absolute;
   transform: translateX(-50%);
-  width: auto;
+  width: -webkit-fill-available;
 }
 
 
@@ -658,4 +664,29 @@ label {
 
 .ocultar_cerrar{
   display: none;
+}
+@media(max-width: 992px) {
+  #columnaIzq{
+    display: none;
+}
+#columnaDer{
+  display: none;
+}
+#columnaCen{
+  width: 100%;
+}
+.infoname{
+
+  flex-direction: column;
+}
+.closesesion{
+  border: 2px solid white;
+  color: white;
+  background-color: rgb(0, 132, 255);
+  padding: 7px 3px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
 }
