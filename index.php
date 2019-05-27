@@ -39,7 +39,7 @@
 				<li class=""><a href="index.php">Inicio</a></li>
 				<li class=""><a href="#about">Acerca de</a></li>
 				<li class=""><a href="inicio_sesion.php">Inicio Seguro</a></li>
-				<li><a href="editor meme/index.php">Editor</a></li>
+				<li><a target="_blank" href="editor-meme/editor.php">Editor</a></li>
 				<li class="">
 
 				<label for="drop-2" class="toggle">Más <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
@@ -323,7 +323,7 @@
 						<a class="" href="#about"> Acerca de nosotros</a>
 					</li>
 					<li>
-						<a class="" href="">Editor</a>
+						<a class="" href="editor.php">Editor</a>
 					</li>
 					<li>
 						<a class="" href="#services">Que ofrecemos</a>

@@ -34,7 +34,7 @@ a:link {
     float: left;
     width: 100%;
     margin: 0% 0% 0% 0%;
-    background-color: #d1e1e6;
+    background-color: rgb(36, 154, 244);;
 }
 .saludo{
     clear: both;
@@ -43,7 +43,6 @@ a:link {
     box-sizing: border-box;
     padding: 1% 3% 0 2%;    
     height: 13vh;
-    background-color: #4267b2;
     color: white;
 }
 .cerrarSesion{
@@ -52,7 +51,6 @@ a:link {
     text-align: right;
     box-sizing: border-box;
     padding: 1% 2% 0 3%;    
-    background-color: #4267b2;
     height: 13vh;
     
 }
@@ -71,21 +69,21 @@ a:link {
     width: 25%; 
     box-sizing: border-box;
     padding: 5% 3% 5% 2%;
-    background-color: #d1e1e6;
+    background-color: rgb(36, 154, 244);
 }
 #columnaCen{
     float: left;
     width: 50%;
     box-sizing: border-box;
     padding: 5% 2% 5% 2%;
-    background-color: #d1e1e6;
+    background-color: rgb(157,215,215);
 }
 #columnaDer{
     float: left;
     width: 25%;
     box-sizing: border-box;
     padding: 5% 2% 5% 3%;
-    background-color: #d1e1e6;
+    background-color: rgb(36, 154, 244);
 }
 .puedesSeguir{
     clear: both;
@@ -98,7 +96,8 @@ a:link {
     float: left;
     width: 50%;
     cursor: pointer; 
-    padding: 5px;
+    padding: 7px 0px 0px 0px;
+    margin: 0% 0% 0% 21%;
 }
 .estasSiguiendo{
     clear: both;
@@ -111,6 +110,7 @@ a:link {
     float: left;
     width: 50%; 
     cursor: pointer; 
+    margin: 0% 0% 0% 22%;
 }
 
 
@@ -127,7 +127,7 @@ a:link {
     clear: both;
     float: left;
     width: 99%; 
-    background-color: #d1e1e6;  
+    background-color: rgb(157,215,215);  
     box-sizing: border-box;
     padding: 2% 0 2% 0;     
 }
@@ -135,7 +135,7 @@ a:link {
     clear: both;
     float: left;
     width: 100%; 
-    background-color: #d1e1e6;  
+    background-color: rgb(157,215,215);  
     box-sizing: border-box;
     padding: 2% 0 2% 0;     
 }
@@ -194,7 +194,9 @@ a:link {
     float: left;
     width: 100%;
     height: 15vh;
-    background-color: #4267b2
+    background-image: url("../images/encabezado-red.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .logo{
     width: 196px;
@@ -223,8 +225,9 @@ a:link {
     border: 2px solid white;
 }
 .botonseguir{
-    float: left;
-    width: 40%;
+    width: 48%;
+    margin-right: 30%;
+    margin-bottom: 10%;
 }
 .nompub{
     width: 30%;
@@ -249,34 +252,34 @@ a:link {
     border-radius: 50%;
 }
 .comen{
-
-border: 1px solid black;
+    border: 1px solid black;
     border-radius: 11px;
     clear: both;
     float: left;
     width: 100%;
-    background-color: #d1e1e682;
+    background-color: #54b6e2ba;
     box-sizing: border-box;
     padding: 28px;}
-    .logo1{
-        width: 100%;
-        text-align: center;
+
+.logo1{
+    width: 100%;
+    text-align: center;
     padding: 1% 0% 0 0%;
     }
-    .logo2{
-        width: 20%;
-    }
-    .imgpub{
-        width: 100%;
-       
-    }
+
+.logo2{
+    width: 20%;
+  }
+
+.imgpub{
+     width: 100%;      
+  }
 
     /*PERFIL*/
-.up2{
-    display: flex;
-    justify-content: space-between;
-    background-color: blue;
-    padding: 10px;
+.up{
+  background: url("../images/encabezado-red.png");
+  background-size: cover;
+  height: 85px;
 }
 /* .logo2{
     width: 47%;
@@ -305,18 +308,38 @@ border: 1px solid black;
     border-radius: 15%;
 }
 .inforight{
-    display: flex;
-    border: 1px solid;
-    margin: 0 0 0 20px;
-    align-items: center;
+  width: 33%;
+  display: flex;
+
+  flex-direction: column;
+  /* margin: 0 0 0 20px; */
+  /* align-items: center; */
+}
+.infoname{
+  display: flex;
 }
 .separar{
-    margin: 20px;
+  margin: 2px;
+  font-size: medium;
+}
+.separarxflex{
+  flex:1;
 }
 .border{
     border: 2px solid;  
 }
 
+.closesesion{
+  border: 2px solid white;
+  color: white;
+
+  background-color:rgb(0, 132, 255);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 #queSisigo2 {
     clear: both;
@@ -614,7 +637,7 @@ label {
   top: 10px;
   left: 95px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'Cabin', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
