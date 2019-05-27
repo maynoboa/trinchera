@@ -34,7 +34,7 @@ a:link {
     float: left;
     width: 100%;
     margin: 0% 0% 0% 0%;
-    background-color: #d1e1e6;
+    background-color: rgb(36, 154, 244);;
 }
 .saludo{
     clear: both;
@@ -69,21 +69,21 @@ a:link {
     width: 25%; 
     box-sizing: border-box;
     padding: 5% 3% 5% 2%;
-    background-color: #d1e1e6;
+    background-color: rgb(36, 154, 244);
 }
 #columnaCen{
     float: left;
     width: 50%;
     box-sizing: border-box;
     padding: 5% 2% 5% 2%;
-    background-color: #d1e1e6;
+    background-color: rgb(157,215,215);
 }
 #columnaDer{
     float: left;
     width: 25%;
     box-sizing: border-box;
     padding: 5% 2% 5% 3%;
-    background-color: #d1e1e6;
+    background-color: rgb(36, 154, 244);
 }
 .puedesSeguir{
     clear: both;
@@ -96,7 +96,8 @@ a:link {
     float: left;
     width: 50%;
     cursor: pointer; 
-    padding: 5px;
+    padding: 7px 0px 0px 0px;
+    margin: 0% 0% 0% 21%;
 }
 .estasSiguiendo{
     clear: both;
@@ -109,6 +110,7 @@ a:link {
     float: left;
     width: 50%; 
     cursor: pointer; 
+    margin: 0% 0% 0% 22%;
 }
 
 
@@ -125,7 +127,7 @@ a:link {
     clear: both;
     float: left;
     width: 99%; 
-    background-color: #d1e1e6;  
+    background-color: rgb(157,215,215);  
     box-sizing: border-box;
     padding: 2% 0 2% 0;     
 }
@@ -133,7 +135,7 @@ a:link {
     clear: both;
     float: left;
     width: 100%; 
-    background-color: #d1e1e6;  
+    background-color: rgb(157,215,215);  
     box-sizing: border-box;
     padding: 2% 0 2% 0;     
 }
@@ -192,7 +194,9 @@ a:link {
     float: left;
     width: 100%;
     height: 15vh;
-    background-color: #4267b2
+    background-image: url("../images/encabezado-red.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .logo{
     width: 196px;
@@ -221,8 +225,9 @@ a:link {
     border: 2px solid white;
 }
 .botonseguir{
-    float: left;
-    width: 40%;
+    width: 48%;
+    margin-right: 30%;
+    margin-bottom: 10%;
 }
 .nompub{
     width: 30%;
@@ -247,33 +252,34 @@ a:link {
     border-radius: 50%;
 }
 .comen{
-
-border: 1px solid black;
+    border: 1px solid black;
     border-radius: 11px;
     clear: both;
     float: left;
     width: 100%;
-    background-color: #d1e1e682;
+    background-color: #54b6e2ba;
     box-sizing: border-box;
     padding: 28px;}
-    .logo1{
-        width: 100%;
-        text-align: center;
+
+.logo1{
+    width: 100%;
+    text-align: center;
     padding: 1% 0% 0 0%;
     }
-    .logo2{
-        width: 20%;
-    }
-    .imgpub{
-        width: 100%;
-       
-    }
+
+.logo2{
+    width: 20%;
+  }
+
+.imgpub{
+     width: 100%;      
+  }
 
     /*PERFIL*/
 .up{
   background: url("../images/encabezado-red.png");
   background-size: cover;
-  height: 82px;
+  height: 85px;
 }
 /* .logo2{
     width: 47%;
