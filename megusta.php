@@ -44,8 +44,8 @@ if ($count == 0) {
 			</div>
 			
 		</div>	
-		<div class='like1' id='".$post."'>								
-			<img class='nomegusta'  src='img/likes/corazon.png'> no me gusta
+		<div class='like1' id='m_".$post."'>								
+			<img class='nomegusta'  src='img/likes/corazon.png'> no me gusta like
 		</div>
 		<span id='a_".$post."'>()</span>            
  
@@ -70,7 +70,7 @@ if ($count == 0) {
 			</div>	
 		</div>
 		<div class='like1' id='".$post."'>	
-			<img src='img/likes/como.png'> me gusta
+			<img src='img/likes/como.png'> me gusta like
 		</div>	
 		<span id='a_".$post."'>()</span>            
 		"				

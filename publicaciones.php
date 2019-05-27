@@ -60,16 +60,14 @@ if ($numeroRegistros) {
                             
                             </div>
                             <div class='like' id='".$fila['id_pub']."'>
-                                <img src='img/likes/como.png'> Me gusta <3                  
+                                <img src='img/likes/como.png'> Me gusta pub                
                             </div>
                             <span id='a_".$fila['id_pub']."'> </span>
                         </div>
                     </div>";
                 }
                 else{
-                    echo "
-                    
-                    
+                    echo "                   
                     <div id='".$fila['id_pub']."' class='contenidoConcreto'>
                         <div id='c_".$fila['id_pub']."'>
                             <div class='nompub'>
@@ -81,7 +79,7 @@ if ($numeroRegistros) {
                                 </div>                            
                             </div>
                             <div class='like' id='".$fila['id_pub']."'>
-                                <img class='nomegusta'  src='img/likes/corazon.png'> no me gusta                 
+                                <img class='nomegusta'  src='img/likes/corazon.png'> no me gusta pub               
                             </div>
                             <span id='a_".$fila['id_pub']."'>  </span>            
                         </div>

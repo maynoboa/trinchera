@@ -19,7 +19,9 @@
                     </div>                    
                     <div class="cerrarSesion2">
                         <div class="cuadro2"> <a href="perfil.php">
-                            <div class="fotoper2"><img src="<?php echo $_SESSION["img"]?>" class="fotoper3" ></div>
+                            <div class="fotoper2">
+                                <img src="<?php echo $_SESSION["img"]?>" class="fotoper3" >
+                            </div>
                             <div><?php echo $_SESSION["no_usu"] ?></div>
                         </div>   
                         <div>
@@ -32,13 +34,19 @@
                     <img src="<?php echo $_SESSION["img"]?>" class="img_perf resultadoo" width=250 height=250 >
                     <p class="usu_img"><?php echo $_SESSION["no_usu"]?></p>
                     <a class="image-wrapper image-sube" href="#">
-          <form id="profilePictureForm" action="#">
-            <input class="hidden-input" id="changePicture" type="file"/>
-            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file" title="Change picture"></label>
-          </form>
-        </a>
+                        <form enctype="multipart/form-data" method="post" name="form1">
+                            <input class="hidden-input" onchange="readURL(this);" id="changePicture" type="file"/>
+                            <!-- <input class="edit glyphicon glyphicon-pencil" for="changePicture" type='file' title="Change picture"  /> -->
+                            <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="submit" title="Change picture"></label>
+                        </form>
+                    </a>
                 </div>
                 <div class="inforight">
+                    <form enctype="multipart/form-data" method="post"  name="form1">
+                        <input type="file" name="file1" required />
+                        <input type="submit" value="Enviar" />
+                    </form>
+
                     <div>
                         <div class="separar">
                             <?php echo $_SESSION["ape1_usu"] ?>
@@ -58,10 +66,7 @@
                             <?php echo $_SESSION["pais_usu"]?>  
                         </div>
                     </div>
-                    <form enctype="multipart/form-data" method="post"  name="form1">
-                        <input type="file" name="file1" required />
-                        <input type="submit" value="Enviar" />
-                    </form>
+                    
                 </div>
             </div>
             

@@ -1,9 +1,9 @@
 $(document).ready(function () {
-	$(".like").click(function (event) {
+	$(".like").click(function () {
 		var id = this.id; 
 		//obtiene el primer id del hijo de la id#+id
 		var ider = $('#'+id+ ' span').first().attr('id');
-		alert(ider);
+		alert(1);
     	$.ajax({
         		type: "POST",
 				url: "megusta.php",
@@ -25,11 +25,14 @@ $(document).ready(function () {
 				//  $("#"+id).html(text);
     	});
 	});
-	$(".like1").click(function (event) {
+	
+});
+$(document).ready(function () {
+$(".like1").click(function (event) {
 		var id = this.id; 
 		//obtiene el primer id del hijo de la id#+id
 		var ider = $('#'+id+ ' span').first().attr('id');
-		alert(ider);
+		 alert(id);
     	$.ajax({
         		type: "POST",
 				url: "megusta.php",
