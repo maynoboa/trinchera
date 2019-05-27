@@ -2,7 +2,7 @@
 header("Content-Type: application/json; charset=UTF-8");
 $datos = json_decode(stripslashes($_GET['datos']),true);
 
-require_once ('con1.php');
+require_once ('conexion_bases.php');
 $mysqli->set_charset("utf8");
 
 /* PROTECCIÓN FRENTE A SQL INYECTADO (FUNCIÓN mysql_real_escape_string) */

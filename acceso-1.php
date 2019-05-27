@@ -4,7 +4,13 @@
         <meta charset="UTF-8">
         <title>Autenticación Multinivel</title>
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
+    <style>
+        body{
+          font-family: 'Cabin', sans-serif;
+        }
+        </style>
     <body>
         <div class="contenedor">        
             <?php require 'seguridad-global-1.php'; ?>
@@ -14,7 +20,7 @@
                     <div class="cerrarSesion">
                             <div class="cuadro">
                     </div>
-                    <a href="inicio_sesion.php">Cerrar Sesion</a></div>                   
+                    <a href="index.php" >Cerrar Sesión</a>                
                     </div>
             <div id="columnaIzq">
                 <h4 class="puedesSeguir">Puedes bloquear</h4>

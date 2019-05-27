@@ -1,7 +1,7 @@
 <?php
 require 'seguridad-global-2.php';
 $texto1=$_POST['texto1'];
-require_once ('con1.php');	
+require_once ('conexion_bases.php');	
 $mysqli->set_charset("utf8");
 $mysqli = new mysqli($se, $us, $co, $bd);
 if ($mysqli->connect_errno) {

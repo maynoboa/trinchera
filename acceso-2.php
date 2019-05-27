@@ -15,7 +15,7 @@
            
             <div class="up">
               <div class="encabezado-red">
-                    <div class="saludo"><a href="acceso-aceptado-2.php"><img src="img/logo.png" class="logo" alt=""></div>
+                    <div class="saludo"><a href="acceso-2.php"><img src="img/logo.png" class="logo" alt=""></div>
                     <div class="cerrarSesion">
                             <div class="cuadro"> <a href="perfil.php">
                             <img src="<?php echo $_SESSION["img"]?>"  class="fotoper"><?php echo $_SESSION["no_usu"]?>

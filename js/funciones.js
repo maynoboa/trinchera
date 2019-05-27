@@ -9,7 +9,7 @@ $(document).ready(function () {
           var objetoDatos1 = { "c1":$("#usuario").val(), "c2":$("#clave").val() };
           var objetoJSON1 = JSON.stringify(objetoDatos1);
 
-          $.getJSON("control-acceso.php",{ datos: objetoJSON1},
+          $.getJSON("control-accesibilidad.php",{ datos: objetoJSON1},
           function(json){
 
             if (json.v1 == "no") {
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 /* ACCESO ACEPTADO.
                  * SE REDIRIGE A acceso-aceptado-n.php
                  * SIN DESTRUIR LAS VARIABLES DE SESIÓN  */
-                var paginaDestino="acceso-aceptado-" + json.v2 + ".php";
+                var paginaDestino="acceso-" + json.v2 + ".php";
                 window.location.href = paginaDestino;
             }
 

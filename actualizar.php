@@ -1,6 +1,6 @@
 <?php
 require 'seguridad-global-2.php';
-require_once ('con1.php');	
+require_once ('conexion_bases.php');	
 $mysqli = new mysqli($se, $us, $co, $bd);
 if ($mysqli->connect_errno) {
     printf("Error en la conexion: %s\n", $mysqli->connect_error);

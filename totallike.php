@@ -1,6 +1,6 @@
 <?php
 require 'seguridad-global-2.php';
-require_once ('con1.php');
+require_once ('conexion_bases.php');
 $mysqli->set_charset("utf8");
 $post=$_POST['id_like'];
 $usuario = $_SESSION['id_usu'];

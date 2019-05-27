@@ -90,6 +90,7 @@ a:link {
     float: left;
     width: 50%; 
     padding-bottom: 5%;   
+    margin: 0% 0% 3% 27%;
 }
 #queNosigo{
     clear: both;
@@ -103,7 +104,8 @@ a:link {
     clear: both;
     float: left;
     width: 50%;
-    padding-bottom: 5%;   
+    padding-bottom: 5%;  
+    margin: 1% 0% 3% 25%; 
 }
 #queSisigo{
     clear: both;
